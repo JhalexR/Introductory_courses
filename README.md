@@ -16,4 +16,4 @@ Each folder in the repository is dedicated to a specific programming language an
 
 ## Contact
 
-rojas-jhalex@gmail.com
+rojas.jhalex@gmail.com
