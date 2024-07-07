@@ -1,6 +1,8 @@
-#University subject Programming 1 
+# University subject Programming 1 
 
-####Package where you keep the gradable exercises of the subject Programming 1 of the first semester of the university
+## Package where you keep the gradable exercises of the subject Programming 1 of the first semester of the university
+
+### The name of the folder is due to the course identification number and the work group number.
 
 1. Siglo
 
