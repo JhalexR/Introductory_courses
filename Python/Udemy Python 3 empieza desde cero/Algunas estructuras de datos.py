@@ -86,4 +86,3 @@ print("Tupla:", mi_tupla)
 print("Diccionario:", mi_diccionario)
 print("Lista:", mi_lista)
 print("Array:", mi_array)
-
