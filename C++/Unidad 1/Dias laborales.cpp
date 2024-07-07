@@ -4,15 +4,16 @@
 
 using namespace std;
 
-using namespace std;
-
+//funcion principal main
 int main (void){
 
+	//declaracion de variables
 	int m=0;
 	int i=0;
 	int a=0;
 	int h=0;
-
+	
+	//solicitud de datos del usuario
     cout<<"\nIntroduzca el año (formato aaaa) y presione enter: ";
 	cin>>a;
 
@@ -26,6 +27,7 @@ int main (void){
 	cout<<"\nDomingo   7";
 	cin>>i;
 
+//condicionales anidadas para conocer los dias habiles del mes segun los datos ingresados 
 if (a>0){
 		if(m>0 && m<13){
 				if(i>0 && i<8){

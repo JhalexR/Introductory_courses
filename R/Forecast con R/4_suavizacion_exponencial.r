@@ -1,0 +1,17 @@
+library(ggplot2)
+library(forecast)
+library(tidyverse)
+library(ggfortify)
+
+demandaestacionaria = ts(serie_estacionaria$Demanda)
+ses(demandaestacionaria)
+for_demandaestacionaria = ses(demandaestacionaria)
+summary(for_demandaestacionaria)
+for_demandaestacionaria = ses(demandaestacionaria,h=20)
+summary(for_demandaestacionaria)
+autoplot(for_demandaestacionaria)+autolayer(fitted(for_demandaestacionaria))
+errores = residuals(for_demandaestacionaria)
+errores
+checkresiduals(errores)
+for_demandaestacionaria = ses(demandaestacionaria,h=20,alpha=0.3)
+summary(for_demandaestacionaria)

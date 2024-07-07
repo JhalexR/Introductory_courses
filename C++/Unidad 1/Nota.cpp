@@ -4,12 +4,15 @@
 
 using namespace std;
 
+//funciona principal main
 int main (void){
 
+	//declaracion de variables
     int x=0;
 	int y=0;
 	int z=0;
 
+	//solictud de datos al usuario
 	cout<<"\nIntroduzca la primera nota y presione enter: ";
 	cin>> x;
 
@@ -19,6 +22,7 @@ int main (void){
 	cout<<"\nIntroduzca la tercera nota y presione enter: ";
 	cin>> z;
 
+	//condicionales donde se calcula cual es la nota mas alta
 	if (x>y) {
 		if(x>z)
 			cout<<"\nla nota mayor es la primera: "<<x;
