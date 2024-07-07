@@ -56,26 +56,26 @@ print(f'tengo {10+10} años')
 
 print(cadena_1*5)
 
-#Vectores
+#listas
 
-vector_1 = ["Python", "Django", "React", "Vue"]
+lista_1 = ["Python", "Django", "React", "Vue"]
 
-print(vector_1[0])
+print(lista_1[0])
 
 #cuando se usa numero negativos 
 #empieza por el final
-print(vector_1[-1])
+print(lista_1[-1])
 
 #modificar en el vector
-vector_1[1] = "Flutter"
+lista_1[1] = "Flutter"
 
 #añadir un dato al final del vector
-vector_1.append("Angular")
-print(vector_1[4])
+lista_1.append("Angular")
+print(lista_1[4])
 
 #añadir un dato en posicion especifica del vector
-vector_1.insert(1,"Angular")
-print(vector_1[1])
+lista_1.insert(1,"Angular")
+print(lista_1[1])
 
 #Tuplas
 #diferencia con vector, 
