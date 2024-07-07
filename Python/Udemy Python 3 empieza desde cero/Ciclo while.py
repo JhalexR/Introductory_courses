@@ -5,8 +5,9 @@ while count <= 50:
     count = count+1
     
 count = 1
+max_number = 10
 tabla = int(input('Que tabla quieres ver? '))
 
-while count <= 10:
+while count <= max_number :
     print(f'{count} x {tabla} = {tabla*count}')
     count = count+1
