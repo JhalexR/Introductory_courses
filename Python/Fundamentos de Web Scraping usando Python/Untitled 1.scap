@@ -1,0 +1,201 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ScappleDocument Version="1.2" ID="C4F7965B-7F5B-462A-ABEA-C8A882C593B8">
+   <Notes>
+      <Note FontSize="12" Width="90.2344" ID="0" Position="36.7,19.6">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="1" Style="Rounded"/>
+         </Appearance>
+         <String>Curso Udemy</String>
+         <ConnectedNoteIDs>1</ConnectedNoteIDs>
+      </Note>
+      <Note FontSize="12" Width="156.25" ID="1" Position="35.9,71.9">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="1" Style="Rounded"/>
+         </Appearance>
+         <String>Fundamentos de Web Scraping con proyectos usando Python</String>
+         <ConnectedNoteIDs>0, 2</ConnectedNoteIDs>
+      </Note>
+      <Note FontSize="12" Width="94.9219" ID="2" Position="38.3,152.4">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="1" Style="Rounded"/>
+         </Appearance>
+         <String>Instalar python</String>
+         <ConnectedNoteIDs>1, 3</ConnectedNoteIDs>
+      </Note>
+      <Note FontSize="12" Width="149.609" ID="3" Position="45.3,257.1">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="1" Style="Rounded"/>
+         </Appearance>
+         <String>Instalar jupyter notebook</String>
+         <ConnectedNoteIDs>2, 4-5, 7</ConnectedNoteIDs>
+      </Note>
+      <Note FontSize="12" Width="107.422" ID="4" Position="282.8,201.6">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="1" Style="Rounded"/>
+         </Appearance>
+         <String>pip install jupyter</String>
+         <ConnectedNoteIDs>3</ConnectedNoteIDs>
+      </Note>
+      <Note FontSize="12" Width="66.0156" ID="5" Position="293.0,290.7">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="1" Style="Rounded"/>
+         </Appearance>
+         <String>para usar</String>
+         <ConnectedNoteIDs>3, 6</ConnectedNoteIDs>
+      </Note>
+      <Note FontSize="12" Width="156.25" ID="6" Position="496.1,250.8">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="1" Style="Rounded"/>
+         </Appearance>
+         <String>Nos ubicamos en la consola en el directorio donde queramos guardar los archivos de python de jupyter y escribirmos.
+
+jupyter notebook</String>
+         <ConnectedNoteIDs>5</ConnectedNoteIDs>
+      </Note>
+      <Note FontSize="12" Width="110.547" ID="7" Position="38.3,389.9">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="1" Style="Rounded"/>
+         </Appearance>
+         <String>Instalar Selenium</String>
+         <ConnectedNoteIDs>3, 8-9</ConnectedNoteIDs>
+      </Note>
+      <Note FontSize="12" Width="120.703" ID="8" Position="264.8,395.4">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="1" Style="Rounded"/>
+         </Appearance>
+         <String>pip install selenium</String>
+         <ConnectedNoteIDs>7</ConnectedNoteIDs>
+      </Note>
+      <Note FontSize="12" Width="121.484" ID="9" Position="28.9,460.2">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="1" Style="Rounded"/>
+         </Appearance>
+         <String>webdriver-manager</String>
+         <ConnectedNoteIDs>7, 10-11</ConnectedNoteIDs>
+      </Note>
+      <Note FontSize="12" Width="231.25" ID="10" Position="261.7,464.9">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="1" Style="Rounded"/>
+         </Appearance>
+         <String>pip install selenium webdriver-manager</String>
+         <ConnectedNoteIDs>9</ConnectedNoteIDs>
+      </Note>
+      <Note FontSize="12" Width="156.25" ID="11" Position="35.9,568.0">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="1" Style="Rounded"/>
+         </Appearance>
+         <String>descargar los drivers del navegador que vayamos a usar </String>
+         <ConnectedNoteIDs>9, 13-14, 16, 18</ConnectedNoteIDs>
+      </Note>
+      <Note FontSize="12" Width="241.406" ID="12" Position="389.1,521.1">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="1" Style="Rounded"/>
+         </Appearance>
+         <String>segun la version se busca en google como Chrome drivers downloads</String>
+         <ConnectedNoteIDs>13</ConnectedNoteIDs>
+      </Note>
+      <Note FontSize="12" Width="61.3281" ID="13" Position="275.0,529.0">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="1" Style="Rounded"/>
+         </Appearance>
+         <String>Chrome </String>
+         <ConnectedNoteIDs>11-12</ConnectedNoteIDs>
+      </Note>
+      <Note FontSize="12" Width="53.5156" ID="14" Position="273.4,591.5">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="1" Style="Rounded"/>
+         </Appearance>
+         <String>Mozilla</String>
+         <ConnectedNoteIDs>11, 15</ConnectedNoteIDs>
+      </Note>
+      <Note FontSize="12" Width="201.563" ID="15" Position="381.3,591.5">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="1" Style="Rounded"/>
+         </Appearance>
+         <String>Se busca en google Geckodriver</String>
+         <ConnectedNoteIDs>14</ConnectedNoteIDs>
+      </Note>
+      <Note FontSize="12" Width="43.3594" ID="16" Position="283.6,646.1">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="1" Style="Rounded"/>
+         </Appearance>
+         <String>Edge</String>
+         <ConnectedNoteIDs>11, 17</ConnectedNoteIDs>
+      </Note>
+      <Note FontSize="12" Width="241.406" ID="17" Position="373.0,642.6">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="1" Style="Rounded"/>
+         </Appearance>
+         <String>segun la version se busca en google como Edge drivers downloads</String>
+         <ConnectedNoteIDs>16</ConnectedNoteIDs>
+      </Note>
+      <Note FontSize="12" Width="276.563" ID="18" Position="35.9,729.0">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="1" Style="Rounded"/>
+         </Appearance>
+         <String>Despues de descargado se extrae el archivo a una carpeta de facil acceso puede ser en C:\ se crea una carpeta llamada webdrivers o se crea la misma carpeta en el directorio donde este ubicado Python </String>
+         <ConnectedNoteIDs>11</ConnectedNoteIDs>
+      </Note>
+   </Notes>
+   <AutoFit>0, 2-9, 11, 13-14, 16</AutoFit>
+   <NoteStyles>
+      <Style AffectFade="No" AffectSticky="No" Name="Bubble (Green)" AffectFontStyle="No" AffectNoteBody="Yes" AffectTextColor="No" ID="32FB212F-40D7-4CDA-8DFB-117570B301B0" AffectAlignment="No" AffectSize="No">
+         <BorderThickness>1</BorderThickness>
+         <BorderColor>0.669413 0.885237 0.56701</BorderColor>
+         <FillColor>0.743786 0.983612 0.629999</FillColor>
+      </Style>
+      <Style AffectFade="No" AffectSticky="No" Name="Bubble (Blue)" AffectFontStyle="No" AffectNoteBody="Yes" AffectTextColor="No" ID="986DB97C-DDFA-4B65-AA3B-E29C4A6A8039" AffectAlignment="No" AffectSize="No">
+         <BorderThickness>1</BorderThickness>
+         <BorderColor>0.668971 0.810269 0.895079</BorderColor>
+         <FillColor>0.743297 0.900298 0.994537</FillColor>
+      </Style>
+      <Style AffectFade="No" AffectSticky="No" Name="Bubble (Yellow)" AffectFontStyle="No" AffectNoteBody="Yes" AffectTextColor="No" ID="F58E10C4-4F9A-4BA9-982C-2B95BFF83E57" AffectAlignment="No" AffectSize="No">
+         <BorderThickness>1</BorderThickness>
+         <BorderColor>0.877745 0.828275 0.562127</BorderColor>
+         <FillColor>0.97528 0.920302 0.624582</FillColor>
+      </Style>
+      <Style AffectFade="No" AffectSticky="No" Name="Bubble (Pink)" AffectFontStyle="No" AffectNoteBody="Yes" AffectTextColor="No" ID="8C0BBF26-DC7A-4945-A1D8-DA16C9440443" AffectAlignment="No" AffectSize="No">
+         <BorderThickness>1</BorderThickness>
+         <BorderColor>0.894545 0.707759 0.715892</BorderColor>
+         <FillColor>0.98912 0.814084 1.0</FillColor>
+      </Style>
+      <Style AffectFade="No" AffectSticky="No" Name="Bubble (Red)" AffectFontStyle="No" AffectNoteBody="Yes" AffectTextColor="No" ID="21A6854B-8188-43C9-9E26-A783FF684AEF" AffectAlignment="No" AffectSize="No">
+         <BorderThickness>1</BorderThickness>
+         <BorderColor>0.894545 0.707759 0.715892</BorderColor>
+         <FillColor>0.993942 0.786389 0.795438</FillColor>
+      </Style>
+      <Style AffectFade="No" AffectSticky="No" Name="Red Text" AffectFontStyle="No" AffectNoteBody="No" AffectTextColor="Yes" ID="CBFEC578-6887-4540-ABED-BABFD3F773F1" AffectAlignment="No" AffectSize="No">
+         <TextColor>0.985946 0.0 0.026947</TextColor>
+      </Style>
+      <Style AffectFade="No" AffectSticky="No" Name="Title Text" AffectFontStyle="Yes" AffectNoteBody="No" AffectTextColor="No" ID="997EC649-3C1C-4620-8B10-5E7E9FAF6459" AffectAlignment="Yes" AffectSize="No">
+         <IsBold>Yes</IsBold>
+         <FontSize>28.0</FontSize>
+      </Style>
+   </NoteStyles>
+   <UISettings>
+      <BackgroundColor>1.0 0.988373 0.949905</BackgroundColor>
+      <DefaultFont>Arial</DefaultFont>
+      <DefaultTextColor/>
+      <NoteXPadding>8.00</NoteXPadding>
+   </UISettings>
+   <PrintSettings VerticallyCentered="Yes" Orientation="Portrait" HorizontalPagination="Clip" PagesDown="1" RightMargin="12.000000" Collates="Yes" BottomMargin="12.000000" VerticalPagination="Auto" PagesAcross="1" TopMargin="12.000000" PaperSize="-1.000000,-1.000000" LeftMargin="12.000000" ScaleFactor="1.000000" HorizontallyCentered="Yes" PaperType="iso-a4"/>
+</ScappleDocument>
