@@ -8,4 +8,24 @@ import matplotlib.pyplot as plt
 # Cargando base de datos
 
 # 1 metodo de carga base de datos desde archivo .CSV
-fifa = pd.read_csv("")
+fifa = pd.read_csv(r"C:\Users\JohnAlexanderPeñaloz\OneDrive - PayU\Principal\2024\Git\Introductory_courses\Python\Evoluciona desde Excel a Python\data.csv", sep=",")
+
+# 2 metodo de carga base de datos desde archivo .xlsx
+fifa_2 = pd.read_excel(r"C:\Users\JohnAlexanderPeñaloz\OneDrive - PayU\Principal\2024\Git\Introductory_courses\Python\Evoluciona desde Excel a Python\data.xlsx")
+
+# 2 metodo de carga base de datos desde SQL
+# import pyodbc 
+# server = "xxx.xxx.xxx..."
+# database = "nombre_base"
+# username ="username"
+# password = "password"
+# driver = "SQL_server"
+# port = xxx
+# cnn = pyodbc.connect('DRIVER='+driver+';PORT=port;SERVER='+server+';PORT=port;DATABASE='+database+';UID='+username+';PWD='+password+')
+# cursor = cnn.cursor()
+
+# fifa_3 = pd.read_sql("SELECT * FROM Nombre_Tabla", cnn)
+
+
+
+
