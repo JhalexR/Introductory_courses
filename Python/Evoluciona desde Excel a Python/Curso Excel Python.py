@@ -26,6 +26,23 @@ fifa_2 = pd.read_excel(r"C:\Users\JohnAlexanderPeñaloz\OneDrive - PayU\Principa
 
 # fifa_3 = pd.read_sql("SELECT * FROM Nombre_Tabla", cnn)
 
+# revision de la base de datos
 
+# funcion head muestra las 5 primeras filas de la base de datos con todas las columnas
+print(fifa.head())
 
+# funcion muestra el nombre de las columnas de la base de datos
+print(fifa.columns.values)
+
+# funcion muestra el nombre de las columnas de la base de datos en en una fila
+print(fifa.columns.values.tolist)
+
+# funcion muestra la cantidad de filas y columnas de la base de datos en en una fila
+print(fifa.shape)
+
+# funcion muestra las principales medidas estadisitcas de las columnas numericas
+print(fifa.describe())
+
+# funcion muestra informacion importante de la base como datos nullos y tipo de datos
+print(fifa.info())
 
