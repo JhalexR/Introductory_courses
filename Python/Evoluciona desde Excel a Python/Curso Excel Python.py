@@ -88,3 +88,11 @@ fifa_parte_nombre = fifa[fifa["Name"].str.contains("Sergio")] # filtrar elemento
 # filtro funcion .isin filtra por los criterios de una lista
 lista = ["Brazil", "Chile", "Argentina"]
 fifa_lista = fifa[fifa["Nationality"].isin(lista)]
+
+# Exportar a excel
+
+# Exportar a .CSV
+fifa_final.to_csv("Base_final.csv")
+
+# Exportar a .xlsx
+fifa_final.to_excel("Base_final.xlsx", index=False) # sin columna index
