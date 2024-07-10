@@ -454,8 +454,160 @@ CTRL + F para  </String>
          <String>//@id</String>
          <ConnectedNoteIDs>52</ConnectedNoteIDs>
       </Note>
+      <Note ID="54" Position="1437.5,548.5" Width="112.891" FontSize="12">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Style="Rounded" Weight="0"/>
+         </Appearance>
+         <String>Predicados Xpath</String>
+      </Note>
+      <Note ID="55" Position="1434.4,608.6" Width="156.25" FontSize="12">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Style="Rounded" Weight="0"/>
+         </Appearance>
+         <String>formas de usar sintaxis Xpath</String>
+         <ConnectedNoteIDs>56</ConnectedNoteIDs>
+      </Note>
+      <Note ID="56" Position="1440.6,687.5" Width="156.25" FontSize="12">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Style="Rounded" Weight="0"/>
+         </Appearance>
+         <String>para seleccionar el ultimo elemento donde exista mas de un elemento del mismo tipo</String>
+         <ConnectedNoteIDs>55, 57</ConnectedNoteIDs>
+      </Note>
+      <Note ID="57" Position="1625.8,704.0" Width="120.703" FontSize="12">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Style="Rounded" Weight="0"/>
+         </Appearance>
+         <String>// elemento [ last( ) ]</String>
+         <ConnectedNoteIDs>56</ConnectedNoteIDs>
+      </Note>
+      <Note ID="58" Position="1617.2,793.8" Width="141.016" FontSize="12">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Style="Rounded" Weight="0"/>
+         </Appearance>
+         <String>// elemento [ last ( ) - 1 ]</String>
+         <ConnectedNoteIDs>59</ConnectedNoteIDs>
+      </Note>
+      <Note ID="59" Position="1452.3,796.1" Width="123.047" FontSize="12">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Style="Rounded" Weight="0"/>
+         </Appearance>
+         <String>penultimo elemento</String>
+         <ConnectedNoteIDs>58</ConnectedNoteIDs>
+      </Note>
+      <Note ID="60" Position="1451.6,852.4" Width="156.25" FontSize="12">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Style="Rounded" Weight="0"/>
+         </Appearance>
+         <String>para seleccionar mas de un nodo</String>
+      </Note>
+      <Note ID="61" Position="1626.6,864.9" Width="179.688" FontSize="12">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Style="Rounded" Weight="0"/>
+         </Appearance>
+         <String>// elemento [ position ( ) &lt; 3 ]</String>
+      </Note>
+      <Note ID="62" Position="1829.7,861.0" Width="208.594" FontSize="12">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Style="Rounded" Weight="0"/>
+         </Appearance>
+         <String>los nodos menores a la 3 posicion</String>
+      </Note>
+      <Note ID="63" Position="1475.0,937.5" Width="156.25" FontSize="12">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Style="Rounded" Weight="0"/>
+         </Appearance>
+         <String>seleccionar los renglones que tengan un atributo </String>
+      </Note>
+      <Note ID="64" Position="1674.2,950.0" Width="147.266" FontSize="12">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Style="Rounded" Weight="0"/>
+         </Appearance>
+         <String>// elemento [ @ atributo ]</String>
+      </Note>
+      <Note ID="65" Position="1675.2,1012.9" Width="203.711" FontSize="12">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Style="Rounded" Weight="0"/>
+         </Appearance>
+         <String>// elemento [ @ atributo ] = “valor”</String>
+      </Note>
+      <Note ID="66" Position="1493.0,1002.4" Width="156.25" FontSize="12">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Style="Rounded" Weight="0"/>
+         </Appearance>
+         <String>Seleccionar un atributo con un valor especifico </String>
+      </Note>
+      <Note ID="67" Position="1513.3,1084.4" Width="156.25" FontSize="12">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Style="Rounded" Weight="0"/>
+         </Appearance>
+         <String>Seleccionar los nodos hijos despues de haber localizado una nodo especifico y sus taributos</String>
+      </Note>
+      <Note ID="68" Position="1691.5,1100.4" Width="322.559" FontSize="12">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Style="Rounded" Weight="0"/>
+         </Appearance>
+         <String>// elemento [ @ atributo ] = “valor” / nombre del nodo hijo</String>
+      </Note>
+      <Note ID="69" Position="1524.2,1171.1" Width="156.25" FontSize="12">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Style="Rounded" Weight="0"/>
+         </Appearance>
+         <String>para seleccionar todos los elementos hijos de un nodo</String>
+      </Note>
+      <Note ID="70" Position="1721.1,1180.5" Width="91.7969" FontSize="12">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Style="Rounded" Weight="0"/>
+         </Appearance>
+         <String>// elemento // *</String>
+      </Note>
+      <Note ID="71" Position="1535.2,1241.5" Width="156.25" FontSize="12">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Style="Rounded" Weight="0"/>
+         </Appearance>
+         <String>para seleccionar todos los elementos que tengan un atributo </String>
+      </Note>
+      <Note ID="72" Position="1761.7,1245.4" Width="111.328" FontSize="12">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Style="Rounded" Weight="0"/>
+         </Appearance>
+         <String>// * [ @ atributo * ] </String>
+      </Note>
+      <Note ID="73" Position="1553.9,1332.9" Width="156.25" FontSize="12">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Style="Rounded" Weight="0"/>
+         </Appearance>
+         <String>para seleccionar todos los nodos que contengan un atributo</String>
+      </Note>
+      <Note ID="74" Position="1780.7,1347.7" Width="66.7969" FontSize="12">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Style="Rounded" Weight="0"/>
+         </Appearance>
+         <String>// * [ @ * ] </String>
+      </Note>
    </Notes>
-   <AutoFit>0-1, 3, 5, 8, 10, 12, 14, 16-17, 24-25, 27-30, 32-33, 36-38, 40-41, 43-44, 46, 48, 50, 53</AutoFit>
+   <AutoFit>0-1, 3, 5, 8, 10, 12, 14, 16-17, 24-25, 27-30, 32-33, 36-38, 40-41, 43-44, 46, 48, 50, 53-54, 57-59, 64, 70, 72, 74</AutoFit>
    <NoteStyles>
       <Style AffectNoteBody="Yes" ID="C3AF939B-4F7A-4A4F-B0CF-B5326A2722CE" AffectFade="No" AffectFontStyle="No" AffectSize="No" AffectTextColor="No" AffectAlignment="No" AffectSticky="No" Name="Bubble (Pink)">
          <BorderThickness>1</BorderThickness>
