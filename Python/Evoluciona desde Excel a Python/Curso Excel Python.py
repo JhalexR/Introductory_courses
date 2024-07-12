@@ -95,4 +95,28 @@ fifa_lista = fifa[fifa["Nationality"].isin(lista)]
 fifa_final.to_csv("Base_final.csv")
 
 # Exportar a .xlsx
-fifa_final.to_excel("Base_final.xlsx", index=False) # sin columna index
+fifa_final.to_excel("Base_final.xlsx", index=False) # sin la columna index
+
+# Campos vacios o nulos
+
+# eliminando columna especifica que consideremos tiene muchos datos nulos
+fifa_final = fifa_final.dropna("Loaned From", axis=1) # para eliminar una columna especifica se coloca el nombre de la columna
+
+# Eliminando columnas que tengan datos nulos
+fifa_final = fifa_final.dropna(axis=1) # elimina todas las columnas que tengan algun dato que sea nulo
+
+# Eliminando filas que tengan datos nulos
+fifa_final = fifa_final.dropna(axis=0) # en este caso elimia todas las filas que tengan algun dato nulo
+
+fifa_final = fifa_final.dropna(how="any",axis=0) # elimina filas que tengan cualquier dato nulo
+
+fifa_final = fifa_final.dropna(how="any",axis=0) # elimina filas que todos sus datos sean nulos
+
+# reemplazar valores nulos
+
+fifa_final = fifa_final.fillna(0) # reemplaza todas las celdas vacias por "0"
+
+fifa_final = fifa_final.fillna("valor nulo") # reemplaza todas las celdas vacias por "valor nulo"
+
+fifa_final["Club"] = fifa_final["Club"].fillna("sin club") # reemplazar los valores nulos de una columna especifica
+
