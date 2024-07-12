@@ -1005,6 +1005,7 @@ CTRL + F para  </String>
             <Border Weight="1" Style="Rounded"/>
          </Appearance>
          <String>texto</String>
+         <ConnectedNoteIDs>128</ConnectedNoteIDs>
       </Note>
       <Note Width="80.8594" FontSize="12" ID="121" Position="1279.2,1888.9">
          <Appearance>
@@ -1012,6 +1013,7 @@ CTRL + F para  </String>
             <Border Weight="1" Style="Rounded"/>
          </Appearance>
          <String>texto parcial</String>
+         <ConnectedNoteIDs>129</ConnectedNoteIDs>
       </Note>
       <Note Width="105.859" FontSize="12" ID="122" Position="1269.4,1954.1">
          <Appearance>
@@ -1019,6 +1021,7 @@ CTRL + F para  </String>
             <Border Weight="1" Style="Rounded"/>
          </Appearance>
          <String>tipo de elemento</String>
+         <ConnectedNoteIDs>130</ConnectedNoteIDs>
       </Note>
       <Note Width="46.4844" FontSize="12" ID="123" Position="1300.0,2020.8">
          <Appearance>
@@ -1026,6 +1029,7 @@ CTRL + F para  </String>
             <Border Weight="1" Style="Rounded"/>
          </Appearance>
          <String>Clase</String>
+         <ConnectedNoteIDs>131</ConnectedNoteIDs>
       </Note>
       <Note Width="87.1094" FontSize="12" ID="124" Position="1277.8,2091.6">
          <Appearance>
@@ -1033,13 +1037,14 @@ CTRL + F para  </String>
             <Border Weight="1" Style="Rounded"/>
          </Appearance>
          <String>CSS selector</String>
+         <ConnectedNoteIDs>132</ConnectedNoteIDs>
       </Note>
       <Note Width="211.111" FontSize="12" ID="125" Position="1406.9,1630.5">
          <Appearance>
             <Alignment>Left</Alignment>
             <Border Weight="1" Style="Rounded"/>
          </Appearance>
-         <String>find_element(by.id, “elemento”)</String>
+         <String>find_element(By.id, “elemento”)</String>
          <ConnectedNoteIDs>117</ConnectedNoteIDs>
       </Note>
       <Note Width="222.222" FontSize="12" ID="126" Position="1415.3,1683.3">
@@ -1047,7 +1052,7 @@ CTRL + F para  </String>
             <Alignment>Left</Alignment>
             <Border Weight="1" Style="Rounded"/>
          </Appearance>
-         <String>find_element(by.name, “elemento”)</String>
+         <String>find_element(By.name, “elemento”)</String>
          <ConnectedNoteIDs>118</ConnectedNoteIDs>
       </Note>
       <Note Width="218.056" FontSize="12" ID="127" Position="1420.8,1750.0">
@@ -1055,11 +1060,51 @@ CTRL + F para  </String>
             <Alignment>Left</Alignment>
             <Border Weight="1" Style="Rounded"/>
          </Appearance>
-         <String>find_element(by.xpath, “elemento”)</String>
+         <String>find_element(By.xpath, “elemento”)</String>
          <ConnectedNoteIDs>119</ConnectedNoteIDs>
       </Note>
+      <Note Width="69.1406" FontSize="12" ID="128" Position="1468.1,1813.9">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="1" Style="Rounded"/>
+         </Appearance>
+         <String>“” By.text“”</String>
+         <ConnectedNoteIDs>120</ConnectedNoteIDs>
+      </Note>
+      <Note Width="73.8281" FontSize="12" ID="129" Position="1470.8,1888.9">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="1" Style="Rounded"/>
+         </Appearance>
+         <String>“ By.text…”</String>
+         <ConnectedNoteIDs>121</ConnectedNoteIDs>
+      </Note>
+      <Note Width="74.6094" FontSize="12" ID="130" Position="1470.8,1950.0">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="1" Style="Rounded"/>
+         </Appearance>
+         <String>“By.type…”</String>
+         <ConnectedNoteIDs>122</ConnectedNoteIDs>
+      </Note>
+      <Note Width="67.5781" FontSize="12" ID="131" Position="1476.4,2013.9">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="1" Style="Rounded"/>
+         </Appearance>
+         <String>“By.class”</String>
+         <ConnectedNoteIDs>123</ConnectedNoteIDs>
+      </Note>
+      <Note Width="48.0469" FontSize="12" ID="132" Position="1494.4,2083.3">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="1" Style="Rounded"/>
+         </Appearance>
+         <String>“By….</String>
+         <ConnectedNoteIDs>124</ConnectedNoteIDs>
+      </Note>
    </Notes>
-   <AutoFit>0-1, 3, 5, 8, 10, 12, 14, 16-17, 24-25, 27-30, 32-33, 36-38, 40-41, 43-44, 46, 48, 50, 53-54, 57-59, 64, 70, 72, 74, 80-81, 84, 87-88, 90, 92, 98, 100-103, 105, 107, 109, 117-124</AutoFit>
+   <AutoFit>0-1, 3, 5, 8, 10, 12, 14, 16-17, 24-25, 27-30, 32-33, 36-38, 40-41, 43-44, 46, 48, 50, 53-54, 57-59, 64, 70, 72, 74, 80-81, 84, 87-88, 90, 92, 98, 100-103, 105, 107, 109, 117-124, 128-132</AutoFit>
    <NoteStyles>
       <Style AffectFontStyle="No" AffectTextColor="No" AffectSize="No" Name="Bubble (Green)" ID="36F452C2-FD7B-430A-807F-84EB666E2C1A" AffectSticky="No" AffectNoteBody="Yes" AffectFade="No" AffectAlignment="No">
          <BorderThickness>1</BorderThickness>
