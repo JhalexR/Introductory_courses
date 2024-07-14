@@ -120,3 +120,20 @@ fifa_final = fifa_final.fillna("valor nulo") # reemplaza todas las celdas vacias
 
 fifa_final["Club"] = fifa_final["Club"].fillna("sin club") # reemplazar los valores nulos de una columna especifica
 
+# funcion Value Counts -recuento-
+
+# funcion Value counts -recuento- se aplica sobre datos que sean strings o variables categoricas generalmente no numerica
+fifa_final = ["Nationality"].value_counts(sort=False) # -recuento- cuenta los registros de esa columna ordenada de menor a mayor
+fifa_final.Nationality.value_counts(sort=False) # -recuento- cuenta los registros de esa columna ordenada de menor a mayor igual segunda forma
+
+# mostrar top 10 -recuento-
+fifa_final.Nationality.value_counts().nlargest(10) # -recuento- muestra el top 10 de registros con mayor valor de esa columna
+fifa_final.Nationality.value_counts().nsmallest(10) # -recuento- muestra el top 10 de registros con menor valor de esa columna
+
+# mostrar contar -recuento- con calculo %
+fifa_final.Nationality.value_counts(normalize=True).nsmallest(10) # muestra el top 10 por %
+
+# funcion Value Counts -recuento- variables numericas
+# hacer intervalos
+fifa_final.Nationality.value_counts(bins=5) # intervalos con datos numericos
+fifa_final.Nationality.value_counts(bins=5, normalize=True) # intervalos con porcentajes
