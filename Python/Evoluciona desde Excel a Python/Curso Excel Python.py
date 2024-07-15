@@ -147,11 +147,29 @@ fifa_final["International Reputation"] = fifa_final["International Reputation"].
 
 # agregar nuevas columnas
 # crear una nueva columna que se va rellenar automaticamente con el numero 1 en todas sus celdas
-fifa_final["Cuenta"] = 1
+fifa_final["Cuenta"] = 1 # el nombre de la nueva columna en este caso es "Cuenta"
 
 # crear columna de clave que es la union de datos que haya en la fila para hacer identificadores
-fifa_final["Clave"] = fifa_final["Nationality"] + "-" + fifa_final["Name"] # concatenar columnas es con el simbolo "+"
+fifa_final["Clave"] = fifa_final["Nationality"] + "-" + fifa_final["Name"] # concatenar columnas se hace con el "+"
 
 # para unir variables en una nueva columna deben ser del mismo tipo de datos 
 # si no son del mismo se debe realizar conversion solo para la nueva columna y no para las columnas originales
 fifa_final["Clave"] = fifa_final["Nationality"] + "-" + fifa_final["Age"].astype(str) # convierte los datos a string en la nueva columna
+
+# Funcion Where -> (numpy)
+# la funcion where cumple la funcion condicional "cuando"
+# en este caso se va a crear una columna donde colocaremos el rango de carrera del jugador
+fifa_final["Proximo_retiro"]  = "Apprentice" # se crea la columna "Proximo_retiro" y se rellena por defecto con "Apprentice" como si todos los jugadores acabaran de iniciar
+
+# en esta sentencia la funcion where pregunta si en la fila en la columna "Age" es >=34 y de ser asi cambia el contenido a "Veteran"
+fifa_final["Proximo_retiro"]  = np.where(fifa_final["Age"]>=34, "Veteran", fifa_final["Proximo_retiro"])
+
+# en esta sentencia la funcion where pregunta si en la columna "Age" es <34 y >30 de ser asi cambia el contenido a "Experienced"
+fifa_final["Proximo_retiro"]  = np.where(fifa_final["Age"]<34 & fifa_final["Age"]>=30, "Experienced", fifa_final["Proximo_retiro"])
+
+# en esta sentencia la funcion where pregunta si en la columna "Age" es <30 y >=25 de ser asi cambia el contenido a "Rookie"
+fifa_final["Proximo_retiro"]  = np.where(fifa_final["Age"]<30 & fifa_final["Age"]>=25, "Rookie", fifa_final["Proximo_retiro"])
+
+# al terminar el bloque de sentencias "where" la comlumna "Proximo_retiro" tendra cada fila 
+# con la informacion actualizada de rango de carrera de cada jugador de acuerdo a su edad
+
