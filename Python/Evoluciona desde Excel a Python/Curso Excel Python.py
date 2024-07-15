@@ -137,3 +137,21 @@ fifa_final.Nationality.value_counts(normalize=True).nsmallest(10) # muestra el t
 # hacer intervalos
 fifa_final.Nationality.value_counts(bins=5) # intervalos con datos numericos
 fifa_final.Nationality.value_counts(bins=5, normalize=True) # intervalos con porcentajes
+
+# Cambiar el formato de los datos
+# funcion astype
+fifa_final = fifa_final.ID.astype(str) # cambiar el ID que estaba en int a string
+
+# cuando el nombre de una columna o variable tiene espacios en blanco no usar sentencia con puntos es necesario usar []
+fifa_final["International Reputation"] = fifa_final["International Reputation"].astype(int) # cambiar de float a int 
+
+# agregar nuevas columnas
+# crear una nueva columna que se va rellenar automaticamente con el numero 1 en todas sus celdas
+fifa_final["Cuenta"] = 1
+
+# crear columna de clave que es la union de datos que haya en la fila para hacer identificadores
+fifa_final["Clave"] = fifa_final["Nationality"] + "-" + fifa_final["Name"] # concatenar columnas es con el simbolo "+"
+
+# para unir variables en una nueva columna deben ser del mismo tipo de datos 
+# si no son del mismo se debe realizar conversion solo para la nueva columna y no para las columnas originales
+fifa_final["Clave"] = fifa_final["Nationality"] + "-" + fifa_final["Age"].astype(str) # convierte los datos a string en la nueva columna
