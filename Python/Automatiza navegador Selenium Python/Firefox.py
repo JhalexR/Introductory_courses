@@ -57,13 +57,26 @@ if elemento is not None:
 elemento = driver.find_elements(By.XPATH,"//tr") 
 if elemento is not None:
     # se usa para contar la cantidad de elementos encontrados
-    print("Se encontraron: ",len(elemento)," elementos" )
+    print("Se encontraron:",len(elemento),"elementos" )
 
 # buscar por mas de un elemento por tag name
 elemento = driver.find_elements(By.TAG_NAME,"tr") 
 if elemento is not None:
     # se usa para contar la cantidad de elementos encontrados
-    print("Se encontraron: ",len(elemento)," elementos" )
+    print("Se encontraron:",len(elemento),"elementos" )
+
+# Acciones
+
+# hacer click en un elemento 
+elemento = driver.find_element(By.XPATH,"//a[contains(text(),'Pagina 2')]") # buscar en la consola con F12 el Xpath para colocarlo
+if elemento is not None:
+    elemento.click()
+
+# hacer click en un elemento 
+elemento = driver.find_element(By.ID,"Segundo") # se dbe buscar antes en la consola el id a donde nos lleva la accion anterior
+if elemento is not None:
+    elemento.send_keys("Juan")
+
 
 # importar time para usar tiempos en el programa
 import time
