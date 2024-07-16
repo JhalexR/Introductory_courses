@@ -65,20 +65,57 @@ if elemento is not None:
     # se usa para contar la cantidad de elementos encontrados
     print("Se encontraron:",len(elemento),"elementos" )
 
+# importar time para usar tiempos en el programa
+import time
+
 # Acciones
 
-# hacer click en un elemento 
-elemento = driver.find_element(By.XPATH,"//a[contains(text(),'Pagina 2')]") # buscar en la consola con F12 el Xpath para colocarlo
+# Click a botones de seleccion y cassillas de seleccion
+
+# Click a botones de seleccion
+# usamos ID para actuar realizar la accion en es elemento por lo cual tenemos que buscar el nombre del ID
+elemento = driver.find_element(By.ID,"RadioGroup1_0")
+if elemento is not None:
+    elemento.click()
+
+#esperamos 5 sergundos para dar click al siguiente elemento
+time.sleep(5)
+
+# usamos ID para actuar realizar la accion en es elemento por lo cual tenemos que buscar el nombre del ID
+elemento = driver.find_element(By.ID,"RadioGroup1_1")
+if elemento is not None:
+    elemento.click()
+
+#esperamos 5 sergundos para dar click al siguiente elemento
+time.sleep(5)
+
+# Click a cassillas de seleccion
+# usamos ID para actuar realizar la accion en es elemento por lo cual tenemos que buscar el nombre del ID
+elemento = driver.find_element(By.ID,"CheckboxGroup1_0")
+if elemento is not None:
+    elemento.click()
+
+#esperamos 5 sergundos para dar click al siguiente elemento
+time.sleep(5)
+
+# usamos ID para actuar realizar la accion en es elemento por lo cual tenemos que buscar el nombre del ID
+elemento = driver.find_element(By.ID,"CheckboxGroup1_1")
 if elemento is not None:
     elemento.click()
 
 # hacer click en un elemento 
-elemento = driver.find_element(By.ID,"Segundo") # se dbe buscar antes en la consola el id a donde nos lleva la accion anterior
+# En HTML el elemento <a> representa un link en este caso estamos buscando un link que diga "Pagina 2" para hacer click en el
+# y nos lleve a la siguiente pagina, para facilitar el proceso usamos la funcion "Contains"
+elemento = driver.find_element(By.XPATH,"//a[contains(text(),'Pagina 2')]") 
+if elemento is not None:
+    elemento.click()
+
+# en esta segunda parte del ejercicio despues de que le demos click en link de segunda pagina 
+# queremos escribir en una de las cajas de texto de la "pagina 2" el nombre "Juan" 
+# hacer click en un elemento 
+elemento = driver.find_element(By.ID,"Segundo") 
 if elemento is not None:
     elemento.send_keys("Juan")
 
-
-# importar time para usar tiempos en el programa
-import time
 time.sleep(5)
 driver.quit()
