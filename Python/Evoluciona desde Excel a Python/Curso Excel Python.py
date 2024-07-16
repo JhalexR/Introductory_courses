@@ -173,3 +173,26 @@ fifa_final["Proximo_retiro"]  = np.where(fifa_final["Age"]<30 & fifa_final["Age"
 # al terminar el bloque de sentencias "where" la comlumna "Proximo_retiro" tendra cada fila 
 # con la informacion actualizada de rango de carrera de cada jugador de acuerdo a su edad
 
+# Crear funciones 
+# las funciones creadas se pueden usar varias veces en diferentes momentos del codigo
+# Creacion y definicion de funcion prueba
+def prueba(x):
+    return  x * 2 # funcion tiene como argumento un valor y lo multiplica 2
+
+# Se crea una nueva columna que va a contener el resultado de aplicar la funcion a una columna
+fifa_final["Cuenta * 2"] = fifa_final["Cuenta"].apply(prueba ) # a la columna "Cuenta" se le aplica la funcion "prueba" y se alamcenaran resultados en "Cuenta * 2"
+
+# creacion y definicion de funcion "Proximo_retiro"
+# se crea una funcion para establecer el tiempo o rango de carrera del jugador como s ehizo en un ejemplo anterior
+# pero usando funcion
+def func_proximo_retiro(x):
+    if x >=34:
+        return "Veteran"
+    elif x >=30:
+        return "Experienced"
+    elif x >=25:
+        return "Rookie"
+    return "Apprentice"
+
+# uso funcion creada llamada "func_proximo_retiro"
+fifa_final["Proximo_retiro"] = fifa_final["Age"].apply(func_proximo_retiro) # se aplica la funcion a la columna "Age" y se alamcena en "Proximo_retiro"
