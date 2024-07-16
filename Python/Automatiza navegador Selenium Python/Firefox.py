@@ -79,7 +79,7 @@ if elemento is not None:
     elemento.click()
 
 #esperamos 5 sergundos para dar click al siguiente elemento
-time.sleep(5)
+time.sleep(1)
 
 # usamos ID para actuar realizar la accion en es elemento por lo cual tenemos que buscar el nombre del ID
 elemento = driver.find_element(By.ID,"RadioGroup1_1")
@@ -87,7 +87,7 @@ if elemento is not None:
     elemento.click()
 
 #esperamos 5 sergundos para dar click al siguiente elemento
-time.sleep(5)
+time.sleep(1)
 
 # Click a cassillas de seleccion
 # usamos ID para actuar realizar la accion en es elemento por lo cual tenemos que buscar el nombre del ID
@@ -96,7 +96,7 @@ if elemento is not None:
     elemento.click()
 
 #esperamos 5 sergundos para dar click al siguiente elemento
-time.sleep(5)
+time.sleep(1)
 
 # usamos ID para actuar realizar la accion en es elemento por lo cual tenemos que buscar el nombre del ID
 elemento = driver.find_element(By.ID,"CheckboxGroup1_1")
@@ -116,6 +116,16 @@ if elemento is not None:
 elemento = driver.find_element(By.ID,"Segundo") 
 if elemento is not None:
     elemento.send_keys("Juan")
+#esperamos 5 sergundos para dar click al siguiente elemento
+time.sleep(1)
+
+# volvemos a la pagina anterior con el mismo metodo de la primera
+elemento = driver.find_element(By.XPATH,"//a[contains(text(),'Home')]") 
+if elemento is not None:
+    elemento.click()
+
+#esperamos 5 sergundos para dar click al siguiente elemento
+time.sleep(1)
 
 # Seleccionar de un drop down y lista de seleccion multiple
 
@@ -140,7 +150,7 @@ from selenium.webdriver.support.select import Select
 elemento = driver.find_element(By.NAME,"ingrediente")
 if elemento is not None:
     IngredientesSel = Select(elemento)
-    IngredientesSel.select_by_value("Cebolla")
+    IngredientesSel.select_by_value("cebolla")
 
 # select_by_index
 # select_by_visible_text
@@ -148,11 +158,29 @@ if elemento is not None:
 # Seleccionar la opcion "Platano"
 elemento = driver.find_element(By.NAME,"Select1")
 if elemento is not None:
-    IngredientesSel = Select(elemento)
-    IngredientesSel.select_by_index(1) # el elemento en la seleccion multiple en el indice 1 corresponde a "Platano" 
-    IngredientesSel.select_by_visible_text("Sandia") # Buscamos por texto "Sandia"
+    IngredientesSel2 = Select(elemento)
+    IngredientesSel2.select_by_index(1) # el elemento en la seleccion multiple en el indice 1 corresponde a "Platano" 
+    IngredientesSel2.select_by_visible_text("Sandia") # Buscamos por texto "Sandia"
+
+# Obteniendo un atributo o texto
+# varios de los elementos HTML tienen como atributo texto
+# si necesitamos obtener ese texto usamos ".text" del Xpath del elemento
+#elemento = driver.find_elements(By.XPATH,"//*[@id='noImportante']/td[2]") 
+#if elemento:
+    # Accede al primer elemento de la lista y obtiene su texto
+ #   texto = elemento[0].text
+  #  print("Texto:", texto)
+#else:
+ #   print("No se encontraron elementos.")
 
 
 
-time.sleep(5)
+# buscar atributo con ID en este caso ID "importante" 
+# usando function get_attribute obtenemos nombre de la clase
+elemento = driver.find_element(By.ID,"importante") 
+if elemento is not None:
+    elemento = elemento.get_attribute("Class")
+    print("Clase:",elemento.text)
+
+time.sleep(1)
 driver.quit()
