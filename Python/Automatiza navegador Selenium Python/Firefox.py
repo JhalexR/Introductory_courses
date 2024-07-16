@@ -70,7 +70,7 @@ import time
 
 # Acciones
 
-# Click a botones de seleccion y cassillas de seleccion
+# Click a botones de seleccion y casillas de seleccion
 
 # Click a botones de seleccion
 # usamos ID para actuar realizar la accion en es elemento por lo cual tenemos que buscar el nombre del ID
@@ -116,6 +116,43 @@ if elemento is not None:
 elemento = driver.find_element(By.ID,"Segundo") 
 if elemento is not None:
     elemento.send_keys("Juan")
+
+# Seleccionar de un drop down y lista de seleccion multiple
+
+# Los drop down y lista de seleccion multiple deben ir en un elemento "select" 
+# que debe ser un elemento de seleccion
+
+# Clase Select de Selenium
+# deselect_all() -> en elementos de seleccion mutiple deselecciona todas las opciones
+# deselect_by_index(index) -> remueve la seleccion basado en la posicion o indice
+# deselect_by_value(value) -> remueve la seleccion basado en el valor de la seleccion
+# deselect_by_visible_text(text) -> remueve la seleccion basado en el texto desplegado
+# select_by_index(index) -> Selecciona basado en la posicion o indice
+# select_by_value(value) -> Selecciona basado en el valor de la seleccion
+# select_by_visible_text(text) -> Selecciona basado en el texto desplegado
+
+# importar libreria para manejo de clase select de Selenium
+from selenium.webdriver.support.select import Select
+
+# select_by_value
+# En esta parte queremos en el elemento de seleccion multiple lalamdo "ingrediente"
+# Seleccionar la opcion "Cebolla"
+elemento = driver.find_element(By.NAME,"ingrediente")
+if elemento is not None:
+    IngredientesSel = Select(elemento)
+    IngredientesSel.select_by_value("Cebolla")
+
+# select_by_index
+# select_by_visible_text
+# En esta parte queremos en el elemento de seleccion multiple llamado "Select1"
+# Seleccionar la opcion "Platano"
+elemento = driver.find_element(By.NAME,"Select1")
+if elemento is not None:
+    IngredientesSel = Select(elemento)
+    IngredientesSel.select_by_index(1) # el elemento en la seleccion multiple en el indice 1 corresponde a "Platano" 
+    IngredientesSel.select_by_visible_text("Sandia") # Buscamos por texto "Sandia"
+
+
 
 time.sleep(5)
 driver.quit()
