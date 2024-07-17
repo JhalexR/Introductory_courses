@@ -165,22 +165,20 @@ if elemento is not None:
 # Obteniendo un atributo o texto
 # varios de los elementos HTML tienen como atributo texto
 # si necesitamos obtener ese texto usamos ".text" del Xpath del elemento
-#elemento = driver.find_elements(By.XPATH,"//*[@id='noImportante']/td[2]") 
-#if elemento:
+elemento = driver.find_elements(By.XPATH,"//*[@id='noImportante']/td[2]") 
+if elemento:
     # Accede al primer elemento de la lista y obtiene su texto
- #   texto = elemento[0].text
-  #  print("Texto:", texto)
-#else:
- #   print("No se encontraron elementos.")
-
-
+    texto = elemento[0].text
+    print("Texto:", texto)
+else:
+    print("No se encontraron elementos.")
 
 # buscar atributo con ID en este caso ID "importante" 
 # usando function get_attribute obtenemos nombre de la clase
 elemento = driver.find_element(By.ID,"importante") 
 if elemento is not None:
     elemento = elemento.get_attribute("Class")
-    print("Clase:",elemento.text)
+    print("Clase:",elemento)
 
 time.sleep(1)
 driver.quit()
