@@ -180,5 +180,66 @@ if elemento is not None:
     elemento = elemento.get_attribute("Class")
     print("Clase:",elemento)
 
+
+
+# propiedades de la clase webdriver para cambiarse de pagina
+# currente_url -> URL de la pagina
+# currente_window_handle -> handle de la ventana actual
+# name -> nombre del navegador
+# orientation -> orientacion del dispositivo
+# page_source -> Codigo de la pagina
+# title -> titulo de la pagina
+# windows_handle -> Todos los handles de todas las ventasna de la sesion actual
+
+# handle es un numero de referencia de ventanas
+
+# para cambiarnos a una nueva ventana
+# swithc_to.window()
+# swithc_to.alert()
+# swithc_to.trame()
+
+# Cambiando el foco a una ventana
+# primero encuentra la ventana actual
+parentHandle = driver.current_window_handle
+print("Parent principal", parentHandle)
+
+# encontrar el boton submit y dar click 
+elemento = driver.find_element(By.ID,"Buton1")
+elemento.click()
+time.sleep(3)
+
+# encontrar todos los handles
+todoshandles = driver.window_handles
+print("todos los handles", todoshandles)
+
+# recorrer las ventasnas con el ciclo hasta llegar a la ventana diferente a la actual
+for handle in todoshandles:
+    if handle != parentHandle:
+        driver.switch_to.window(handle)
+
+# ingresar datos 
+elemento = driver.find_element(By.ID,"Segundo")
+if elemento is not None:
+    elemento.send_keys("Juan")
+
+# guardar en variable la ventana actual 
+secondhandle = driver.current_window_handle
+print("Parent secundario", secondhandle)
+
+# recorrer las ventasnas con el ciclo hasta llegar a la ventana diferente a la actual
+for handle in todoshandles:
+    if handle != secondhandle:
+        driver.switch_to.window(handle)
+
+# cambiando el foco a una alerta
+# se debe buscar el xpath de la alerta 
+elemento = driver.find_elements(By.ID,"center") 
+elemento.click()
+time.sleep(3)
+
+alerta = driver.switch_to.alerta
+alerta.accept()
+
+
 time.sleep(1)
 driver.quit()
