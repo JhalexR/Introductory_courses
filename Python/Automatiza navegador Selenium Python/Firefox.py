@@ -196,7 +196,7 @@ if elemento is not None:
 # para cambiarnos a una nueva ventana
 # swithc_to.window()
 # swithc_to.alert()
-# swithc_to.trame()
+# swithc_to.frame()
 
 # Cambiando el foco a una ventana
 # primero encuentra la ventana actual
@@ -257,6 +257,37 @@ elemento = driver.find_element(By.ID,"Segundo")
 if elemento is not None:
     elemento.send_keys("Juan")
 
+# volvemos al parent frame es decir a al frame principal de la pagina donde estamos
+driver.switch_to.parent_frame()
+prueba_handle = driver.current_window_handle
+print("Parent actual", prueba_handle)
+
+# acciones en cadena
+# automatizar acciones basicas como click o movimientos del mouse
+# sirve especialmente para elementos que se activen cuando el puntero
+# pasa por alguna parte de la pagina
+
+# importar clase "ActionChains"
+from selenium.webdriver import ActionChains
+
+# la clase del elemento que se activa con el puntero se llama "dropbtn"
+elemento = driver.find_element(By.CLASS_NAME,"dropbtn")
+if elemento is not None:
+    acciones = ActionChains(driver)
+    acciones.move_to_element(driver.find_element(By.CLASS_NAME,"dropbtn"))
+    acciones.perform()  # las acciones no se activan hasta que se utilice .perform()
+
+time.sleep(3)
+
+# hasta que el elemento no despliegue
+elemento = driver.find_element(By.LINK_TEXT,"Link 1") 
+if elemento is not None:
+    acciones.move_to_element(elemento)
+    acciones.click()
+    acciones.perform()
+
+# Elimina todas las cookies
+driver.delete_all_cookies()
 
 time.sleep(3)
 driver.quit()
