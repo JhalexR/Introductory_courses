@@ -233,13 +233,30 @@ for handle in todoshandles:
 
 # cambiando el foco a una alerta
 # se debe buscar el xpath de la alerta 
-elemento = driver.find_elements(By.ID,"center") 
+elemento = driver.find_element(By.XPATH,"//*[@id='center']/button") 
 elemento.click()
-time.sleep(3)
 
-alerta = driver.switch_to.alerta
+# con esta funcion cambiamos el foco a la alerta y le damos aceptar
+alerta = driver.switch_to.alert
 alerta.accept()
 
+# cambiar el foco a un frame
+# frame es es un elemento implementado por Netscape, que permite dividir la pantalla en 
+# varias áreas independientes unas de otras, y por tanto con contenidos distintos, 
+# aunque puedan estar relacionados. No hay límites para el contenido de cada una de estas áreas: 
+# tienen las mismas propiedades que la pantalla completa normal
 
-time.sleep(1)
+# debemos primero encontrar en la estructura del HTML el nombre del elemento donde se encuentra
+# contenida el frame y alli debemos buscar donde esta el elemento que queremos interactuar
+
+# para esta caso el frame esta en "pruebas-iframe"
+elemento = driver.find_element(By.ID,"pruebas-iframe")
+if elemento is not None:
+    driver.switch_to.frame("pruebas-iframe")
+elemento = driver.find_element(By.ID,"Segundo")
+if elemento is not None:
+    elemento.send_keys("Juan")
+
+
+time.sleep(3)
 driver.quit()
