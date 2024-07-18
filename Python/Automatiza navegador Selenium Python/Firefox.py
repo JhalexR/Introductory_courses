@@ -270,17 +270,21 @@ print("Parent actual", prueba_handle)
 # importar clase "ActionChains"
 from selenium.webdriver import ActionChains
 
-# la clase del elemento que se activa con el puntero se llama "dropbtn"
-elemento = driver.find_element(By.CLASS_NAME,"dropbtn")
+# la clase del elemento que se activa con el puntero se llama "dropbdown"
+elemento = driver.find_element(By.CLASS_NAME,"dropdown")
 if elemento is not None:
     acciones = ActionChains(driver)
-    acciones.move_to_element(driver.find_element(By.CLASS_NAME,"dropbtn"))
+    acciones.move_to_element(driver.find_element(By.CLASS_NAME,"dropdown"))
     acciones.perform()  # las acciones no se activan hasta que se utilice .perform()
 
 time.sleep(3)
 
-# hasta que el elemento no despliegue
-elemento = driver.find_element(By.LINK_TEXT,"Link 1") 
+# Espera implicita
+# esperar a que un elemento emergente aparezca para interactuar con el
+# en un determinado periodo de tiempo si aparece interactuara con en el
+# el elemento, pero solo esperara el tiempo descrito
+elemento = driver.find_element(By.LINK_TEXT,"Link 1")
+driver.implicitly_wait(15) # implicitly wait
 if elemento is not None:
     acciones.move_to_element(elemento)
     acciones.click()
