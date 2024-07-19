@@ -180,8 +180,6 @@ if elemento is not None:
     elemento = elemento.get_attribute("Class")
     print("Clase:",elemento)
 
-
-
 # propiedades de la clase webdriver para cambiarse de pagina
 # currente_url -> URL de la pagina
 # currente_window_handle -> handle de la ventana actual
@@ -324,12 +322,6 @@ espera = WebDriverWait(driver,10)
 elemento = espera.until(EC.element_to_be_clickable((By.ID,"proceed")))
 if elemento is not None:
     elemento.click()
-
-time.sleep(5)
-# llenar text box para evidenciar que se pudo ingresar
-elemento = driver.find_element(By.ID,"Segundo")
-if elemento is not None:
-    elemento.send_keys("Juan")
 
 # Elimina todas las cookies
 driver.delete_all_cookies()
