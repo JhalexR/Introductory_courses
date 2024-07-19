@@ -275,20 +275,61 @@ elemento = driver.find_element(By.CLASS_NAME,"dropdown")
 if elemento is not None:
     acciones = ActionChains(driver)
     acciones.move_to_element(driver.find_element(By.CLASS_NAME,"dropdown"))
-    acciones.perform()  # las acciones no se activan hasta que se utilice .perform()
+    acciones.perform() 
+    time.sleep(5)
+    # Espera implicita
+    # Las esperas implícitas se configuran una vez y se aplican a todas 
+    # las acciones subsecuentes de búsqueda de elementos
+    # Si el elemento no está inmediatamente disponible, 
+    # Selenium esperará un período de tiempo determinado antes de lanzar 
+    # una excepción NoSuchElementException. 
+    # Durante este período, Selenium sigue intentando encontrar el elemento en intervalos regulares.
+    elemento = driver.find_element(By.LINK_TEXT,"Link 1")
+    time.sleep(2)
+    elemento = driver.find_element(By.LINK_TEXT,"Link 1")
+    driver.implicitly_wait(15) # implicitly wait
+    if elemento is not None:
+        acciones.move_to_element(elemento)
+        acciones.click()
+        acciones.perform()# las acciones no se activan hasta que se utilice .perform()
 
-time.sleep(3)
-
-# Espera implicita
-# esperar a que un elemento emergente aparezca para interactuar con el
-# en un determinado periodo de tiempo si aparece interactuara con en el
-# el elemento, pero solo esperara el tiempo descrito
-elemento = driver.find_element(By.LINK_TEXT,"Link 1")
-driver.implicitly_wait(15) # implicitly wait
+time.sleep(1)
+# volvemos a la pagina principal o Home
+elemento = driver.find_element(By.XPATH,"//a[contains(text(),'Home')]") 
 if elemento is not None:
-    acciones.move_to_element(elemento)
-    acciones.click()
-    acciones.perform()
+    elemento.click()
+
+
+# espera explicita
+# Las esperas explícitas se utilizan para esperar una condición específica antes de proceder
+# Estas esperas se configuran para situaciones específicas y no afectan a todas las búsquedas 
+# de elementos como lo hacen las esperas implícitas
+# Selenium ofrece la clase WebDriverWait en combinación con expected_conditions 
+# para realizar esperas explícitas.
+
+# la clase que se usa para esperas explicitas es expected_conditions
+# element_to_be_clickeable() -> espera que un elemento sea visible y este listo para click
+# element_to_be_selected() -> Espera que el elemento sea seleccionado
+# presence_of_element_located() -> Espera que el elemento este disponible en el DOM
+# title_contains() -> Espera a que el titulo de la pagina tenga una cadena de caracteres
+# visibility_of() -> localiza el elemento espera que sea visible y de tamaño > 0
+# text_to_be_present_in_element() -> localiza el elemento espera a que tenga texto
+# alert_is_presente() -> Espera que una alerta se presente
+
+time.sleep(1)
+# importar clases necesarias para espera explicita
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
+espera = WebDriverWait(driver,10)
+elemento = espera.until(EC.element_to_be_clickable((By.ID,"proceed")))
+if elemento is not None:
+    elemento.click()
+
+time.sleep(5)
+# llenar text box para evidenciar que se pudo ingresar
+elemento = driver.find_element(By.ID,"Segundo")
+if elemento is not None:
+    elemento.send_keys("Juan")
 
 # Elimina todas las cookies
 driver.delete_all_cookies()
