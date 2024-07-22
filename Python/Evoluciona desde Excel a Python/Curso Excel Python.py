@@ -180,7 +180,7 @@ def prueba(x):
     return  x * 2 # funcion tiene como argumento un valor y lo multiplica 2
 
 # Se crea una nueva columna que va a contener el resultado de aplicar la funcion a una columna
-fifa_final["Cuenta * 2"] = fifa_final["Cuenta"].apply(prueba ) # a la columna "Cuenta" se le aplica la funcion "prueba" y se alamcenaran resultados en "Cuenta * 2"
+fifa_final["Cuenta * 2"] = fifa_final["Cuenta"].apply(prueba) # a la columna "Cuenta" se le aplica la funcion "prueba" y se alamcenaran resultados en "Cuenta * 2"
 
 # creacion y definicion de funcion "Proximo_retiro"
 # se crea una funcion para establecer el tiempo o rango de carrera del jugador como s ehizo en un ejemplo anterior
@@ -196,3 +196,10 @@ def func_proximo_retiro(x):
 
 # uso funcion creada llamada "func_proximo_retiro"
 fifa_final["Proximo_retiro"] = fifa_final["Age"].apply(func_proximo_retiro) # se aplica la funcion a la columna "Age" y se alamcena en "Proximo_retiro"
+
+# realizar la misma tarea que la funcion anterior "prueba" pero con for
+fifa_final["Cuenta * 2"] = [x * 2 for x in fifa_final["Cuenta"]] # recorre con for la columna "cuenta" y aplica x*2 mientras aumenta for y alamacena en nueva columna "Cuenta * 2" 
+
+# funcion si o if de excel en python
+# reocorre la columna "Proximo_retiro" si el contenido diferente de "Veteran" coloca si en la nueva columna "Opcion de compra"] en caso contrario coloca "No"
+fifa_final["Opcion de compra"] = ["Si" if x!="Veteran" else "No" for x in fifa_final["Proximo_retiro"]] 
