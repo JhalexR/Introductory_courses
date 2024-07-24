@@ -203,3 +203,11 @@ fifa_final["Cuenta * 2"] = [x * 2 for x in fifa_final["Cuenta"]] # recorre con f
 # funcion si o if de excel en python
 # reocorre la columna "Proximo_retiro" si el contenido diferente de "Veteran" coloca si en la nueva columna "Opcion de compra"] en caso contrario coloca "No"
 fifa_final["Opcion de compra"] = ["Si" if x!="Veteran" else "No" for x in fifa_final["Proximo_retiro"]] 
+
+# funcion Merge reemplazo de buscarV y tiene mas opciones
+# primer paro creamos una base de datos con las columnas que vamos a usar 
+# la base original tiene 18207 filas pero el maximo de filas con datos en las columnas seleccionadas es de 17549
+fifa_filtro_1 = fifa_final[0:17549,[1,77,79,88]] # la nueva base contiene las columnas 1, 77, 79 y 88 con las que se hara la busqueda
+# uso de la funcion Merge
+fifa_Merge = [pd.merge(left=fifa_final, right=fifa_filtro_1, how='left', on="ID")] 
+# una mejor explicacion de la funcion Merge en reemplazo de la funcion buscarV en archivo de esta misma carpeta llamado Merge
