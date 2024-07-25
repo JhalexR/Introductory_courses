@@ -232,3 +232,11 @@ fifa_parte_1_and_parte_2 = pd.concat([fifa_parte_1,fifa_parte_2], axis=0) # axis
 # los datos de la segunda base de datos coincidiendo en las mismas columnas, en las columnas que solo esten en la primera 
 # base de datos quedaron valores vacios o nulos en las nuevas filas anexadas de la segunda base de datos
 
+# eliminar duplicados
+
+fifa_parte_1.id.nunique() # la funcion nunique muestar si hay datos duplicados en alguna columna
+fifa_parte_1 =  fifa_parte_1.drop_duplicates() # la funcion .drop_duplicates elimina duplicados donde las filas sean en todos sus campos o columnas iguales
+# con El parametro "subset" la columna guia para quitar duplicados y el parametro "keep" es para dejar conservar la primera fila que encuentre y borrar las demas
+fifa_parte_1 =  fifa_parte_1.drop_duplicates(subset="Nationality", keep='first') 
+# para eliminar por mas de una columna de guia
+fifa_parte_1 =  fifa_parte_1.drop_duplicates(subset=["Position", "Age"], keep='last') # conserva la ultima fila que encuentre
