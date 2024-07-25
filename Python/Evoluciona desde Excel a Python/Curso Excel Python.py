@@ -220,3 +220,15 @@ lista = {"Brazil", "Argentina", "Chile", "Francia"}
 fifa_paises = fifa_final(fifa_final["Nationality"].isin(lista)) # con la funcion "isin" llenamos la nueva base solo con los paises de la "lista"  
 # esta funcion esta deprecated y se usa en su lugar la funcion .melt combnada con .loc
 
+# la funcion Concat en python une dos bases de datos coloca al final de una base de datos la segunda base de datos
+# util para cuando se esta consolidando informacion de bases de datos que se van actualizando con el tiempo
+fifa_parte_1 = fifa_final.iloc[0:60] # base de datos de las primeras 60 filas de la base de datos total 
+fifa_parte_2 = fifa_final.iloc[120:180] # base de datos de las filas desde la 120 a la 180 de la base de datos total
+# se usa la funcion concat para unirlas en una sola base de datos por filas es decir primero una base y en cuando termine en la siguiente fila la otra base
+fifa_parte_1_and_parte_2 = pd.concat([fifa_parte_1,fifa_parte_2], axis=0) # axis=0 indica que se uniran las bases por filas
+# en caso de que las bases de datos tengan columnas en comun pero no la misma cantidad de columnas
+# la funcion concat localiza donde se encuentra la misma columna en la primer base de datos y anexa la informacion de la misma columna 
+# en la segunda base de datos, evitando que se crucen columnas, las columnas de la primera base de datos le seran anexadas
+# los datos de la segunda base de datos coincidiendo en las mismas columnas, en las columnas que solo esten en la primera 
+# base de datos quedaron valores vacios o nulos en las nuevas filas anexadas de la segunda base de datos
+
