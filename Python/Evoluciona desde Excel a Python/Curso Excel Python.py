@@ -211,3 +211,12 @@ fifa_filtro_1 = fifa_final[0:17549,[1,77,79,88]] # la nueva base contiene las co
 # uso de la funcion Merge
 fifa_Merge = [pd.merge(left=fifa_final, right=fifa_filtro_1, how='left', on="ID")] 
 # una mejor explicacion de la funcion Merge en reemplazo de la funcion buscarV en archivo de esta misma carpeta llamado Merge
+
+# funcion lookup es similar a buscarH en excel
+
+# primero creamos una lista con algunos de los paises que estan e la columna Nationality de la base que estamos manejando
+lista = {"Brazil", "Argentina", "Chile", "Francia"}
+# creamos nueva base de datos solo con los datos de la columna "Nationality" que se encuentren en la "lista"
+fifa_paises = fifa_final(fifa_final["Nationality"].isin(lista)) # con la funcion "isin" llenamos la nueva base solo con los paises de la "lista"  
+# esta funcion esta deprecated y se usa en su lugar la funcion .melt combnada con .loc
+
