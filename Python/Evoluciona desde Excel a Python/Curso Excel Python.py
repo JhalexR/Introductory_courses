@@ -248,4 +248,11 @@ fifa_final = fifa_final.sort_values("Age") # por defecto ordena de menor a mayor
 fifa_final = fifa_final.sort_values("Age",ascending=False) # para ordenar de mayor a menor
 # en este caso asume que "Age" es numerica y "Nationality" es alafabetica  
 fifa_final = fifa_final.sort_values(["Age","Nationality"],ascending=True)
- 
+
+# argumento inplace
+# argumento in place sirve para actualziar la base de datos que se esta unsado sin necesidad de generar una variable
+# o realizar la asignacion en la variable
+# forma normal:
+fifa_final = fifa_final.sort_values(["Age","Nationality"],ascending=True)
+# forma con inplace
+fifa_final.sort_values(["Age","Nationality"],ascending=True, inplace=True) # no se usa , "fifa_final =" o una nueva variable
