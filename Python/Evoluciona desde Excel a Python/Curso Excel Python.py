@@ -256,3 +256,16 @@ fifa_final = fifa_final.sort_values(["Age","Nationality"],ascending=True)
 fifa_final = fifa_final.sort_values(["Age","Nationality"],ascending=True)
 # forma con inplace
 fifa_final.sort_values(["Age","Nationality"],ascending=True, inplace=True) # no se usa , "fifa_final =" o una nueva variable
+
+# operadores logicos
+# eq = igualdad
+# me = diferente
+# le = menor o igual
+# lt = menor que
+# ge = mayor o igual que
+# gt = mayor que
+fifa_final["Columna_1"] = fifa_final["Skill Moves"].le(fifa_final["Weak_Foot"]) # en la nueva columna guarda el resultado de "le" entre las dos columnas
+fifa_final["Columna_1"] = [1 if x == True else 0 for x in fifa_final["Columna_1"]] # coloca 1 o 0 si es verdadero o falso segun la condicion
+# comparar con un valor constante
+n = 80
+fifa_final["Columna_1"] = fifa_final["Potential"].gt(n) # comprara la columna "Potential" si es mayor o igual a "n"
