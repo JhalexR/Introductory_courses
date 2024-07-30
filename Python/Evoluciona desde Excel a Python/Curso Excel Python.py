@@ -269,3 +269,15 @@ fifa_final["Columna_1"] = [1 if x == True else 0 for x in fifa_final["Columna_1"
 # comparar con un valor constante
 n = 80
 fifa_final["Columna_1"] = fifa_final["Potential"].gt(n) # comprara la columna "Potential" si es mayor o igual a "n"
+
+# Intervalos manuales
+# funcion Cut
+fifa_final["Intervalos_manuales"] = pd.cut(fifa_final("Jersey Number"), bins=[0,5,15,25,110])
+# Agurpa de la columna "Jersey Number" los numeros de camsieta que se encuentren en el rango de los grupos:
+#  primer grupo 0 hasta 5
+#  segundo grupo 6 hasta 15
+#  segundo grupo 16 hasta 25
+#  segundo grupo 26 hasta 100
+# los guarda en la nueva columna "Intervalos_manuales"
+# para incluir el numero menor en cada intervalos usamos el argumento "include_lowest"
+fifa_final["Intervalos_manuales"] = pd.cut(fifa_final("Jersey Number"), bins=[0,5,15,25,110], include_lowest=True)
