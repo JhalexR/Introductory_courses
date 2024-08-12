@@ -1,4 +1,4 @@
-package Estudio_Autonomo;
+package Estudio_Autonomo.Interfaces;
 
 //Conceptos
 
@@ -7,11 +7,6 @@ package Estudio_Autonomo;
 //Objetos son instancias de clases.
 //Interfaces definen métodos que las clases deben implementar.
 //Métodos son funciones definidas dentro de clases.
-
-// Definición de interfaz
-public interface Animal {
-    void hacerSonido();
-}
 
 // Definición de clase que implementa la interfaz
 public class Perro implements Animal {
@@ -28,17 +23,5 @@ public class Perro implements Animal {
 
     public void saludar() {
         System.out.println("Hola, mi nombre es " + nombre);
-    }
-}
-
-// Clase principal para ejecutar el código
-public class Main {
-    public static void main(String[] args) {
-        // Crear una instancia (objeto) de Perro
-        Perro miPerro = new Perro("Rex");
-        
-        // Llamar a métodos del objeto
-        miPerro.saludar();
-        miPerro.hacerSonido();
     }
 }
