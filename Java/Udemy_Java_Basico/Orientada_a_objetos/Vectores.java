@@ -2,10 +2,10 @@ package Udemy_Java_Basico.Orientada_a_objetos;
 
 import java.util.Scanner;
 
-public class Arreglos_Vectores {
+public class Vectores {
 
     private Scanner teclado;
-	private int[] sueldo; // lo definimos como un atributo de clase ya que se va a utilizar en los dos métodos
+	  private int[] sueldo; // lo definimos como un atributo de clase ya que se va a utilizar en los dos métodos
 
     public void cargar(){
 
@@ -25,7 +25,7 @@ public class Arreglos_Vectores {
 	}
 
     public static void main(String[] ar){
-        Arreglos_Vectores usuario = new Arreglos_Vectores();
+        Vectores usuario = new Vectores();
         usuario.cargar();
         usuario.imprimir();
    }
