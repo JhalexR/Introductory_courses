@@ -1,4 +1,4 @@
-package Udemy_Java_Basico.Orientada_a_objetos.Interfaces_2;
+package Udemy_Java_Basico.Orientada_a_objetos.Interfaces_2.Interface_1;
 
 // esta es la clase donde va a estar el metodo main 
 // en esta clase se crean los objetos 

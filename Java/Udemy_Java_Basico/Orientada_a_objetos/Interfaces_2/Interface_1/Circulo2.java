@@ -1,4 +1,4 @@
-package Udemy_Java_Basico.Orientada_a_objetos.Interfaces_2;
+package Udemy_Java_Basico.Orientada_a_objetos.Interfaces_2.Interface_1;
 
 // en esta clase se implementa la interfaz 
 // en la definicion de la clase se debe usar 
@@ -6,8 +6,8 @@ package Udemy_Java_Basico.Orientada_a_objetos.Interfaces_2;
 // la interfaz en la clase y usar los metodos de
 // la interfaz
 
-class Rectangulo implements Dibujar{  
+class Circulo2 implements Dibujar{  
     public void draw(){
-      System.out.println("drawing rectangle");
+        System.out.println("drawing circle");
     }  
   }  
