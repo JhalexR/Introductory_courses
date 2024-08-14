@@ -11,14 +11,15 @@ import java.util.Scanner;
 // a los metodos de esta clase, en resumen creara los objetos tomando como plantilla esta clase
 
 class SBI implements Empresa{ 
-	  private Scanner teclado;
+	private Scanner teclado;
     private float sueldos;
     private float interes;
  
     // metodo de la interfaz "Empresa" que es la clase extendida o hija de la clase "Bank"
     public void datos(){
-  	    Scanner teclado=new Scanner(System.in);
-        sueldos=teclado.nextInt();    
+  	    //Scanner teclado = new Scanner(System.in);
+        sueldos = teclado.nextInt();   
+        //teclado.close(); 
   }	
 
    // metodos de la interfaz "Bank" que es la interfaz principal o padre
