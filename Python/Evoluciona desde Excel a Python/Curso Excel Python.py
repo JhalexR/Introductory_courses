@@ -281,3 +281,13 @@ fifa_final["Intervalos_manuales"] = pd.cut(fifa_final("Jersey Number"), bins=[0,
 # los guarda en la nueva columna "Intervalos_manuales"
 # para incluir el numero menor en cada intervalos usamos el argumento "include_lowest"
 fifa_final["Intervalos_manuales"] = pd.cut(fifa_final("Jersey Number"), bins=[0,5,15,25,110], include_lowest=True)
+
+# funciones de texto
+# convertir letras de celda en minuscula
+fifa_final["Nacion"] = fifa_final["Nationality"].str.lower()
+# convertir letras de celda en mayuscula
+fifa_final["Nacion"] = fifa_final["Nationality"].str.upper()
+# primera letra em mayuscula y las demas en minuscula
+fifa_final["Nacion"] = fifa_final["Nationality"].str.capitalize()
+# reemplazar texto
+fifa_final["Nacion"] = fifa_final["Nationality"].str.replace("a","o") # reemplazar letras "a" por "o"
