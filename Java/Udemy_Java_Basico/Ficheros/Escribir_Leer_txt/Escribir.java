@@ -1,4 +1,4 @@
-package datos;
+package Udemy_Java_Basico.Ficheros.Escribir_Leer_txt;
 /*Clase que permite escribir en un archivo de texto*/
 // importamos clases para manipulación ficheros
 import java.io.File;
