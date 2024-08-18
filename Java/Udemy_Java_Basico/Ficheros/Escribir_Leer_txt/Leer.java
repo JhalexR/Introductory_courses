@@ -8,7 +8,7 @@ import java.io.BufferedReader;
 public class Leer {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		// Auto-generated method stub
 		// creamos n string que va a contener todo el texto del archivo
 		String texto="";
 		try{
