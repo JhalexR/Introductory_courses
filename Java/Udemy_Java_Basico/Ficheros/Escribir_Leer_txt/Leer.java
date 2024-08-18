@@ -19,6 +19,8 @@ public class Leer {
 			// con el siguiente ciclo extraemos todo el contenido del objeto "contenido" y lo mostramos
 			while((texto=contenido.readLine())!=null){
 				System.out.println(texto);
+            // cerramos objeto "contenido"
+            contenido.close();
 			}
 				
 			}catch(Exception e){
