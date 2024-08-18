@@ -26,6 +26,8 @@ public class Escribir {
 		escribir.write(contenido);
 		// cerramos la conexión
 		escribir.close();
+		// cerramos objeto "teclado"
+		teclado.close();
 		// si existe un problema al escribir se crea una excepción
 		}catch(Exception e){
 			System.out.println("Error al escribir");
