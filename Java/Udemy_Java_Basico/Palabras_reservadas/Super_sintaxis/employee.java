@@ -7,7 +7,9 @@ class employee { // clase principal
 class clerk extends employee { // 
  int wt = 10;  // atributo de la clase secundaria tiene el mismo nombre del atributo la clase principal
  void display() {
-  System.out.println(super.wt); // aca la expresion "super.wt" hace referencia al atributo "wt" de la clase "employee" y no al de clase "clerk", se usa "super" porque tienen el mismo nombre
+  // aca la expresion "super.wt" hace referencia al atributo "wt" de la clase "employee" 
+  // y no al de clase "clerk", se usa "super" porque tienen el mismo nombre
+  System.out.println(super.wt); 
  }
 
  public static void main(String args[]) {
