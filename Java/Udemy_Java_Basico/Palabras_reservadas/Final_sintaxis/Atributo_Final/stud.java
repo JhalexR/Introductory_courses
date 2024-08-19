@@ -1,9 +1,5 @@
 package Udemy_Java_Basico.Palabras_reservadas.Final_sintaxis.Atributo_Final;
 
-import java.util.*;
-import java.lang.*;
-import java.io.*;
-
 // clase principal
 class stud {
  final int val; // se usa la palabra reservada "final" para evitar que despues de inicializar la variable pueda ser modificada
