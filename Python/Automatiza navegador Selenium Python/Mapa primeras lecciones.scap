@@ -1,0 +1,1149 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ScappleDocument Version="1.2" ID="27817DA1-D743-40F9-A11C-9C571C7B52F2">
+   <Notes>
+      <Note Width="41.7969" FontSize="12" ID="0" Position="39.8,168.0">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="1" Style="Rounded"/>
+         </Appearance>
+         <String>DOM</String>
+         <ConnectedNoteIDs>3</ConnectedNoteIDs>
+      </Note>
+      <Note Width="94.9219" FontSize="12" ID="1" Position="38.3,20.4">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="1" Style="Rounded"/>
+         </Appearance>
+         <Formatting>
+            <FormatRange Bold="Yes">0,11</FormatRange>
+         </Formatting>
+         <String>Curso Udemy</String>
+      </Note>
+      <Note Width="180.469" FontSize="12" ID="2" Position="33.6,81.3">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="1" Style="Rounded"/>
+         </Appearance>
+         <Formatting>
+            <FormatRange Bold="Yes">0,55</FormatRange>
+         </Formatting>
+         <String>Automatiza tu navegador. Selenium WebDriver con Python.</String>
+      </Note>
+      <Note Width="153.516" FontSize="12" ID="3" Position="108.6,171.1">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="1" Style="Rounded"/>
+         </Appearance>
+         <String>Documento Object Model</String>
+         <ConnectedNoteIDs>0, 4</ConnectedNoteIDs>
+      </Note>
+      <Note Width="43.75" FontSize="12" ID="4" Position="353.1,175.8">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="1" Style="Rounded"/>
+         </Appearance>
+         <String>Nodo</String>
+         <ConnectedNoteIDs>3, 5-7, 14, 17</ConnectedNoteIDs>
+      </Note>
+      <Note Width="154.297" FontSize="12" ID="5" Position="528.1,49.3">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="1" Style="Rounded"/>
+         </Appearance>
+         <String>Es un elemento en HTML</String>
+         <ConnectedNoteIDs>4</ConnectedNoteIDs>
+      </Note>
+      <Note Width="156.25" FontSize="12" ID="6" Position="532.0,131.3">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="1" Style="Rounded"/>
+         </Appearance>
+         <String>Estan relacionados entre ellos</String>
+         <ConnectedNoteIDs>4</ConnectedNoteIDs>
+      </Note>
+      <Note Width="156.25" FontSize="12" ID="7" Position="525.0,191.5">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="1" Style="Rounded"/>
+         </Appearance>
+         <String>En los sitios web tienen estructura de arbol de nodos</String>
+         <ConnectedNoteIDs>4</ConnectedNoteIDs>
+      </Note>
+      <Note Width="81.6406" FontSize="12" ID="8" Position="78.1,461.0">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="1" Style="Rounded"/>
+         </Appearance>
+         <String>Nodos Hijos</String>
+         <ConnectedNoteIDs>9-10, 12</ConnectedNoteIDs>
+      </Note>
+      <Note Width="156.25" FontSize="12" ID="9" Position="222.7,444.6">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="1" Style="Rounded"/>
+         </Appearance>
+         <String>Elementos en el siguiente nivel dentro de otros elementos o nodos</String>
+         <ConnectedNoteIDs>8</ConnectedNoteIDs>
+      </Note>
+      <Note Width="92.5781" FontSize="12" ID="10" Position="66.4,386.0">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="1" Style="Rounded"/>
+         </Appearance>
+         <String>Nodos Padres</String>
+         <ConnectedNoteIDs>8, 11, 14</ConnectedNoteIDs>
+      </Note>
+      <Note Width="156.25" FontSize="12" ID="11" Position="225.0,383.6">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="1" Style="Rounded"/>
+         </Appearance>
+         <String>Elemento que contiene al hijo</String>
+         <ConnectedNoteIDs>10</ConnectedNoteIDs>
+      </Note>
+      <Note Width="110.547" FontSize="12" ID="12" Position="70.3,535.2">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="1" Style="Rounded"/>
+         </Appearance>
+         <String>Nodos Hermanos</String>
+         <ConnectedNoteIDs>8, 13, 16</ConnectedNoteIDs>
+      </Note>
+      <Note Width="156.25" FontSize="12" ID="13" Position="216.4,518.0">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="1" Style="Rounded"/>
+         </Appearance>
+         <String>Que estan al mismo nivel o tienen el mismo nodo padre</String>
+         <ConnectedNoteIDs>12</ConnectedNoteIDs>
+      </Note>
+      <Note Width="108.203" FontSize="12" ID="14" Position="98.4,288.3">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="1" Style="Rounded"/>
+         </Appearance>
+         <String>Nodos Ancestros</String>
+         <ConnectedNoteIDs>4, 10, 15</ConnectedNoteIDs>
+      </Note>
+      <Note Width="156.25" FontSize="12" ID="15" Position="274.2,298.5">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="1" Style="Rounded"/>
+         </Appearance>
+         <String>Nodos arriba de la Jerarquia</String>
+         <ConnectedNoteIDs>14</ConnectedNoteIDs>
+      </Note>
+      <Note Width="136.328" FontSize="12" ID="16" Position="64.1,586.8">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="1" Style="Rounded"/>
+         </Appearance>
+         <String>Nodos Descendientes</String>
+         <ConnectedNoteIDs>12, 20</ConnectedNoteIDs>
+      </Note>
+      <Note Width="62.1094" FontSize="12" ID="17" Position="519.5,333.6">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="1" Style="Rounded"/>
+         </Appearance>
+         <String>Atributos</String>
+         <ConnectedNoteIDs>4, 18</ConnectedNoteIDs>
+      </Note>
+      <Note Width="156.25" FontSize="12" ID="18" Position="621.1,326.6">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="1" Style="Rounded"/>
+         </Appearance>
+         <String>Los atributos describen a los nodos</String>
+         <ConnectedNoteIDs>17, 19</ConnectedNoteIDs>
+      </Note>
+      <Note Width="214.063" FontSize="12" ID="19" Position="813.3,243.0">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="1" Style="Rounded"/>
+         </Appearance>
+         <String>Son las caracteristicas de tiene el nodo en su funcionamiento, por ejemplo
+
+nodo: 
+tabla
+
+atributos: 
+ancho
+bordes
+nombre
+id</String>
+         <ConnectedNoteIDs>18</ConnectedNoteIDs>
+      </Note>
+      <Note Width="156.25" FontSize="12" ID="20" Position="246.9,595.4">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="1" Style="Rounded"/>
+         </Appearance>
+         <String>Nodos en la parte inferior de la jerarquia</String>
+         <ConnectedNoteIDs>16</ConnectedNoteIDs>
+      </Note>
+      <Note Width="156.25" FontSize="12" ID="21" Position="582.8,466.5">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="1" Style="Rounded"/>
+         </Appearance>
+         <Formatting>
+            <FormatRange Bold="Yes">0,53</FormatRange>
+         </Formatting>
+         <String>Encontrando nodos usando la consola del desarrollador</String>
+         <ConnectedNoteIDs>22, 24</ConnectedNoteIDs>
+      </Note>
+      <Note Width="156.25" FontSize="12" ID="22" Position="600.8,564.1">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="1" Style="Rounded"/>
+         </Appearance>
+         <String>En el sitio web presionamos F12</String>
+         <ConnectedNoteIDs>21, 23</ConnectedNoteIDs>
+      </Note>
+      <Note Width="156.25" FontSize="12" ID="23" Position="604.7,648.5">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="1" Style="Rounded"/>
+         </Appearance>
+         <String>Despues vamos a la parte de la consola donde hay un puntero de mouse y con el podemos seleccionar los nodos y en la consola nos mostrará la posicion en el arbol de nodos</String>
+         <ConnectedNoteIDs>22</ConnectedNoteIDs>
+      </Note>
+      <Note Width="70.7031" FontSize="20" ID="24" Position="888.2,542.4">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="1" Style="Rounded"/>
+         </Appearance>
+         <Formatting>
+            <FormatRange Bold="Yes">0,5</FormatRange>
+         </Formatting>
+         <String>Xpath</String>
+         <ConnectedNoteIDs>21, 25, 27</ConnectedNoteIDs>
+      </Note>
+      <Note Width="126.172" FontSize="12" ID="25" Position="866.4,616.5">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="1" Style="Rounded"/>
+         </Appearance>
+         <String>XML Path Language</String>
+         <ConnectedNoteIDs>24, 26</ConnectedNoteIDs>
+      </Note>
+      <Note Width="156.25" FontSize="12" ID="26" Position="851.6,700.8">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="1" Style="Rounded"/>
+         </Appearance>
+         <String>Lenguaje para seleccionar nodos de una archivo HTML</String>
+         <ConnectedNoteIDs>25, 38</ConnectedNoteIDs>
+      </Note>
+      <Note Width="120.703" FontSize="15" ID="27" Position="1021.2,544.3">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="1" Style="Rounded"/>
+         </Appearance>
+         <Formatting>
+            <FormatRange Bold="Yes">0,14</FormatRange>
+         </Formatting>
+         <String>Sintaxis Xpath</String>
+         <ConnectedNoteIDs>24, 29, 54</ConnectedNoteIDs>
+      </Note>
+      <Note Width="153.516" FontSize="12" ID="28" Position="1142.2,610.2">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="1" Style="Rounded"/>
+         </Appearance>
+         <String>Seleccionar desde la raiz</String>
+         <ConnectedNoteIDs>29</ConnectedNoteIDs>
+      </Note>
+      <Note Width="19.1406" FontSize="12" ID="29" Position="1070.3,607.9">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="1" Style="Rounded"/>
+         </Appearance>
+         <String>/ </String>
+         <ConnectedNoteIDs>27-28, 30</ConnectedNoteIDs>
+      </Note>
+      <Note Width="19.1406" FontSize="12" ID="30" Position="1073.4,655.5">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="1" Style="Rounded"/>
+         </Appearance>
+         <String>//</String>
+         <ConnectedNoteIDs>29, 31, 34</ConnectedNoteIDs>
+      </Note>
+      <Note Width="16.0156" FontSize="12" ID="31" Position="1078.9,705.5">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="1" Style="Rounded"/>
+         </Appearance>
+         <String>.</String>
+         <ConnectedNoteIDs>30, 32, 35</ConnectedNoteIDs>
+      </Note>
+      <Note Width="19.1406" FontSize="12" ID="32" Position="1075.8,762.5">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="1" Style="Rounded"/>
+         </Appearance>
+         <String>..</String>
+         <ConnectedNoteIDs>31, 33, 36</ConnectedNoteIDs>
+      </Note>
+      <Note Width="25.3906" FontSize="12" ID="33" Position="1074.2,811.0">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="1" Style="Rounded"/>
+         </Appearance>
+         <String>@</String>
+         <ConnectedNoteIDs>32, 37</ConnectedNoteIDs>
+      </Note>
+      <Note Width="156.25" FontSize="12" ID="34" Position="1146.9,654.7">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="1" Style="Rounded"/>
+         </Appearance>
+         <String>Selecciona todos los nodos de un criterio</String>
+         <ConnectedNoteIDs>30</ConnectedNoteIDs>
+      </Note>
+      <Note Width="156.25" FontSize="12" ID="35" Position="1165.6,716.5">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="1" Style="Rounded"/>
+         </Appearance>
+         <String>Selecciona el nodo actual</String>
+         <ConnectedNoteIDs>31</ConnectedNoteIDs>
+      </Note>
+      <Note Width="155.078" FontSize="12" ID="36" Position="1165.6,761.8">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="1" Style="Rounded"/>
+         </Appearance>
+         <String>Selecciona el nodo padre</String>
+         <ConnectedNoteIDs>32</ConnectedNoteIDs>
+      </Note>
+      <Note Width="126.172" FontSize="12" ID="37" Position="1157.8,807.1">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="1" Style="Rounded"/>
+         </Appearance>
+         <String>Selecciona atributos</String>
+         <ConnectedNoteIDs>33</ConnectedNoteIDs>
+      </Note>
+      <Note Width="35.5469" FontSize="12" ID="38" Position="918.8,796.9">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="1" Style="Rounded"/>
+         </Appearance>
+         <String>Uso</String>
+         <ConnectedNoteIDs>26, 39</ConnectedNoteIDs>
+      </Note>
+      <Note Width="156.25" FontSize="12" ID="39" Position="871.1,841.5">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="1" Style="Rounded"/>
+         </Appearance>
+         <String>despues de abrir la consola del navegador con F12 debemos usar la combinacion de teclas 
+
+CTRL + F para  </String>
+         <ConnectedNoteIDs>38, 40</ConnectedNoteIDs>
+      </Note>
+      <Note Width="65.2344" FontSize="12" ID="40" Position="928.1,979.7">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="1" Style="Rounded"/>
+         </Appearance>
+         <String>Ejemplos</String>
+         <ConnectedNoteIDs>39, 41, 44, 50</ConnectedNoteIDs>
+      </Note>
+      <Note Width="74.6094" FontSize="12" ID="41" Position="682.0,986.0">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="1" Style="Rounded"/>
+         </Appearance>
+         <String>usando “ / ”</String>
+         <ConnectedNoteIDs>40</ConnectedNoteIDs>
+      </Note>
+      <Note Width="156.25" FontSize="12" ID="42" Position="664.1,1042.2">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="1" Style="Rounded"/>
+         </Appearance>
+         <String>queremos encontrar el nodo “body”</String>
+         <ConnectedNoteIDs>43</ConnectedNoteIDs>
+      </Note>
+      <Note Width="73.0469" FontSize="12" ID="43" Position="708.6,1134.4">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="1" Style="Rounded"/>
+         </Appearance>
+         <String>/html/body/</String>
+         <ConnectedNoteIDs>42</ConnectedNoteIDs>
+      </Note>
+      <Note Width="77.7344" FontSize="12" ID="44" Position="924.2,1022.7">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="1" Style="Rounded"/>
+         </Appearance>
+         <String>usando “ // ”</String>
+         <ConnectedNoteIDs>40, 45</ConnectedNoteIDs>
+      </Note>
+      <Note Width="156.25" FontSize="12" ID="45" Position="889.8,1091.5">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="1" Style="Rounded"/>
+         </Appearance>
+         <String>queremos encontrar todos los “tr” renglones de la tabla</String>
+         <ConnectedNoteIDs>44, 46</ConnectedNoteIDs>
+      </Note>
+      <Note Width="29.2969" FontSize="12" ID="46" Position="939.1,1177.4">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="1" Style="Rounded"/>
+         </Appearance>
+         <String>// tr</String>
+         <ConnectedNoteIDs>45, 47</ConnectedNoteIDs>
+      </Note>
+      <Note Width="206.25" FontSize="12" ID="47" Position="890.6,1223.5">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="1" Style="Rounded"/>
+         </Appearance>
+         <String>en caso de que haya varios elementos con el mismo nombre se puede seleccionar elemento especifico de la siguiente forma</String>
+         <ConnectedNoteIDs>46, 48</ConnectedNoteIDs>
+      </Note>
+      <Note Width="51.9531" FontSize="12" ID="48" Position="953.9,1355.9">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="1" Style="Rounded"/>
+         </Appearance>
+         <String>// tr [ 2 ]</String>
+         <ConnectedNoteIDs>47, 49</ConnectedNoteIDs>
+      </Note>
+      <Note Width="156.25" FontSize="12" ID="49" Position="1082.8,1342.2">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="1" Style="Rounded"/>
+         </Appearance>
+         <String>selecciona el segundo renglon de la tabla</String>
+         <ConnectedNoteIDs>48</ConnectedNoteIDs>
+      </Note>
+      <Note Width="69.9219" FontSize="12" ID="50" Position="1114.1,980.5">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="1" Style="Rounded"/>
+         </Appearance>
+         <String>usando @</String>
+         <ConnectedNoteIDs>40, 51-52</ConnectedNoteIDs>
+      </Note>
+      <Note Width="156.25" FontSize="12" ID="51" Position="1219.5,957.9">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="1" Style="Rounded"/>
+         </Appearance>
+         <String>premite seleccionar todos los nodos que contengan un atributo</String>
+         <ConnectedNoteIDs>50</ConnectedNoteIDs>
+      </Note>
+      <Note Width="156.25" FontSize="12" ID="52" Position="1095.3,1039.1">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="1" Style="Rounded"/>
+         </Appearance>
+         <String>queremos encontrar todos los nodos con el atributo “id”</String>
+         <ConnectedNoteIDs>50, 53</ConnectedNoteIDs>
+      </Note>
+      <Note Width="41.7969" FontSize="12" ID="53" Position="1144.5,1125.8">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="1" Style="Rounded"/>
+         </Appearance>
+         <String>//@id</String>
+         <ConnectedNoteIDs>52</ConnectedNoteIDs>
+      </Note>
+      <Note Width="144.141" FontSize="15" ID="54" Position="1508.3,562.4">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="1" Style="Rounded"/>
+         </Appearance>
+         <Formatting>
+            <FormatRange Bold="Yes">0,16</FormatRange>
+         </Formatting>
+         <String>Predicados Xpath</String>
+         <ConnectedNoteIDs>27, 55</ConnectedNoteIDs>
+      </Note>
+      <Note Width="156.25" FontSize="12" ID="55" Position="1494.1,629.4">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="1" Style="Rounded"/>
+         </Appearance>
+         <String>formas de usar sintaxis Xpath</String>
+         <ConnectedNoteIDs>54, 56</ConnectedNoteIDs>
+      </Note>
+      <Note Width="156.25" FontSize="12" ID="56" Position="1492.0,694.4">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="1" Style="Rounded"/>
+         </Appearance>
+         <String>para seleccionar el ultimo elemento donde exista mas de un elemento del mismo tipo</String>
+         <ConnectedNoteIDs>55, 57, 59</ConnectedNoteIDs>
+      </Note>
+      <Note Width="119.922" FontSize="12" ID="57" Position="1677.2,710.9">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="1" Style="Rounded"/>
+         </Appearance>
+         <String>// elemento [ last( ) ]</String>
+         <ConnectedNoteIDs>56</ConnectedNoteIDs>
+      </Note>
+      <Note Width="140.234" FontSize="12" ID="58" Position="1665.8,799.4">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="1" Style="Rounded"/>
+         </Appearance>
+         <String>// elemento [ last ( ) - 1 ]</String>
+         <ConnectedNoteIDs>59</ConnectedNoteIDs>
+      </Note>
+      <Note Width="122.266" FontSize="12" ID="59" Position="1500.9,797.5">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="1" Style="Rounded"/>
+         </Appearance>
+         <String>penultimo elemento</String>
+         <ConnectedNoteIDs>56, 58, 60</ConnectedNoteIDs>
+      </Note>
+      <Note Width="156.25" FontSize="12" ID="60" Position="1487.7,849.6">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="1" Style="Rounded"/>
+         </Appearance>
+         <String>para seleccionar mas de un nodo</String>
+         <ConnectedNoteIDs>59, 61, 63</ConnectedNoteIDs>
+      </Note>
+      <Note Width="179.688" FontSize="12" ID="61" Position="1662.7,862.1">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="1" Style="Rounded"/>
+         </Appearance>
+         <String>// elemento [ position ( ) &lt; 3 ]</String>
+         <ConnectedNoteIDs>60, 62</ConnectedNoteIDs>
+      </Note>
+      <Note Width="208.594" FontSize="12" ID="62" Position="1865.8,858.2">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="1" Style="Rounded"/>
+         </Appearance>
+         <String>los nodos menores a la 3 posicion</String>
+         <ConnectedNoteIDs>61</ConnectedNoteIDs>
+      </Note>
+      <Note Width="156.25" FontSize="12" ID="63" Position="1495.8,929.2">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="1" Style="Rounded"/>
+         </Appearance>
+         <String>seleccionar los renglones que tengan un atributo </String>
+         <ConnectedNoteIDs>60, 64, 66</ConnectedNoteIDs>
+      </Note>
+      <Note Width="146.484" FontSize="12" ID="64" Position="1700.6,938.9">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="1" Style="Rounded"/>
+         </Appearance>
+         <String>// elemento [ @ atributo ]</String>
+         <ConnectedNoteIDs>63</ConnectedNoteIDs>
+      </Note>
+      <Note Width="203.711" FontSize="12" ID="65" Position="1703.0,1019.8">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="1" Style="Rounded"/>
+         </Appearance>
+         <String>// elemento [ @ atributo ] = “valor”</String>
+         <ConnectedNoteIDs>66</ConnectedNoteIDs>
+      </Note>
+      <Note Width="156.25" FontSize="12" ID="66" Position="1497.2,1009.3">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="1" Style="Rounded"/>
+         </Appearance>
+         <String>Seleccionar un atributo con un valor especifico </String>
+         <ConnectedNoteIDs>63, 65, 67</ConnectedNoteIDs>
+      </Note>
+      <Note Width="156.25" FontSize="12" ID="67" Position="1506.4,1091.3">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="1" Style="Rounded"/>
+         </Appearance>
+         <String>Seleccionar los nodos hijos despues de haber localizado una nodo especifico y sus taributos</String>
+         <ConnectedNoteIDs>66, 68-69</ConnectedNoteIDs>
+      </Note>
+      <Note Width="322.559" FontSize="12" ID="68" Position="1684.6,1107.3">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="1" Style="Rounded"/>
+         </Appearance>
+         <String>// elemento [ @ atributo ] = “valor” / nombre del nodo hijo</String>
+         <ConnectedNoteIDs>67</ConnectedNoteIDs>
+      </Note>
+      <Note Width="156.25" FontSize="12" ID="69" Position="1515.9,1180.8">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="1" Style="Rounded"/>
+         </Appearance>
+         <String>para seleccionar todos los elementos hijos de un nodo</String>
+         <ConnectedNoteIDs>67, 70-71</ConnectedNoteIDs>
+      </Note>
+      <Note Width="91.0156" FontSize="12" ID="70" Position="1712.8,1190.2">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="1" Style="Rounded"/>
+         </Appearance>
+         <String>// elemento // *</String>
+         <ConnectedNoteIDs>69</ConnectedNoteIDs>
+      </Note>
+      <Note Width="156.25" FontSize="12" ID="71" Position="1513.0,1249.8">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="1" Style="Rounded"/>
+         </Appearance>
+         <String>para seleccionar todos los elementos que tengan un atributo </String>
+         <ConnectedNoteIDs>69, 72-73</ConnectedNoteIDs>
+      </Note>
+      <Note Width="110.547" FontSize="12" ID="72" Position="1739.5,1253.7">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="1" Style="Rounded"/>
+         </Appearance>
+         <String>// * [ @ atributo * ] </String>
+         <ConnectedNoteIDs>71</ConnectedNoteIDs>
+      </Note>
+      <Note Width="156.25" FontSize="12" ID="73" Position="1517.8,1335.7">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="1" Style="Rounded"/>
+         </Appearance>
+         <String>para seleccionar todos los nodos que contengan un atributo</String>
+         <ConnectedNoteIDs>71, 74</ConnectedNoteIDs>
+      </Note>
+      <Note Width="66.0156" FontSize="12" ID="74" Position="1734.9,1354.6">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="1" Style="Rounded"/>
+         </Appearance>
+         <String>// * [ @ * ] </String>
+         <ConnectedNoteIDs>73</ConnectedNoteIDs>
+      </Note>
+      <Note Width="156.25" FontSize="16" ID="75" Position="2138.9,548.6">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="1" Style="Rounded"/>
+         </Appearance>
+         <Formatting>
+            <FormatRange Bold="Yes">0,28</FormatRange>
+         </Formatting>
+         <String>buscar Xpath en el navegador</String>
+         <ConnectedNoteIDs>76</ConnectedNoteIDs>
+      </Note>
+      <Note Width="156.25" FontSize="12" ID="76" Position="2136.1,650.0">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="1" Style="Rounded"/>
+         </Appearance>
+         <String>Seleccionamos la parte de la que queremos saber la sentencia Xpath </String>
+         <ConnectedNoteIDs>75, 77</ConnectedNoteIDs>
+      </Note>
+      <Note Width="156.25" FontSize="12" ID="77" Position="2134.7,755.5">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="1" Style="Rounded"/>
+         </Appearance>
+         <String>y damos click derecho y damos en la opcion copy Xpath</String>
+         <ConnectedNoteIDs>76, 78</ConnectedNoteIDs>
+      </Note>
+      <Note Width="156.25" FontSize="12" ID="78" Position="2134.7,850.0">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="1" Style="Rounded"/>
+         </Appearance>
+         <String>despues lo podemos copiar en la barra de busqueda para seleccionar el elemento</String>
+         <ConnectedNoteIDs>77, 79</ConnectedNoteIDs>
+      </Note>
+      <Note Width="156.25" FontSize="12" ID="79" Position="2144.4,966.6">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="1" Style="Rounded"/>
+         </Appearance>
+         <String>si queremos seleccionar la parte de texto le colocamos al final del resultado de la busqueda de Xpath </String>
+         <ConnectedNoteIDs>78, 80-81</ConnectedNoteIDs>
+      </Note>
+      <Note Width="50.3906" FontSize="12" ID="80" Position="2393.1,995.8">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="1" Style="Rounded"/>
+         </Appearance>
+         <String>/ text( )</String>
+         <ConnectedNoteIDs>79</ConnectedNoteIDs>
+      </Note>
+      <Note Width="118.359" FontSize="12" ID="81" Position="2154.2,1108.3">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="1" Style="Rounded"/>
+         </Appearance>
+         <String>funcion contains ( )</String>
+         <ConnectedNoteIDs>79, 82</ConnectedNoteIDs>
+      </Note>
+      <Note Width="156.25" FontSize="12" ID="82" Position="2158.3,1172.2">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="1" Style="Rounded"/>
+         </Appearance>
+         <String>para buscar una parte que contenga parte de un texto</String>
+         <ConnectedNoteIDs>81, 83</ConnectedNoteIDs>
+      </Note>
+      <Note Width="266.667" FontSize="12" ID="83" Position="2358.3,1191.6">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="1" Style="Rounded"/>
+         </Appearance>
+         <String>// h1 [ contains ( text ( ), “palabra a buscar” ) ]</String>
+         <ConnectedNoteIDs>82</ConnectedNoteIDs>
+      </Note>
+      <Note Width="126.172" FontSize="16" ID="84" Position="181.9,1538.9">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="1" Style="Rounded"/>
+         </Appearance>
+         <Formatting>
+            <FormatRange Bold="Yes">0,13</FormatRange>
+         </Formatting>
+         <String>CSS Selectors</String>
+         <ConnectedNoteIDs>86, 91, 98, 110</ConnectedNoteIDs>
+      </Note>
+      <Note Width="311.111" FontSize="12" ID="85" Position="97.2,1468.0">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="0" Style="Rounded"/>
+         </Appearance>
+         <Formatting>
+            <FormatRange Link="https://www.w3schools.com/cssref/css_selectors.php" Underline="Yes">0,50</FormatRange>
+         </Formatting>
+         <String>https://www.w3schools.com/cssref/css_selectors.php</String>
+      </Note>
+      <Note Width="156.25" FontSize="12" ID="86" Position="420.8,1497.2">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="1" Style="Rounded"/>
+         </Appearance>
+         <String>para buscar elemenot s css se puede buscar igual en la barra de busqueda CTRL + F pero no hay necesidad de una sintaxis</String>
+         <ConnectedNoteIDs>84, 87, 108</ConnectedNoteIDs>
+      </Note>
+      <Note Width="156.25" FontSize="12" ID="87" Position="423.6,1638.9">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="1" Style="Rounded"/>
+         </Appearance>
+         <String>ejemplo. buscar las tablas</String>
+         <ConnectedNoteIDs>86, 88</ConnectedNoteIDs>
+      </Note>
+      <Note Width="23.8281" FontSize="12" ID="88" Position="600.0,1648.6">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="1" Style="Rounded"/>
+         </Appearance>
+         <String>td</String>
+         <ConnectedNoteIDs>87</ConnectedNoteIDs>
+      </Note>
+      <Note Width="156.25" FontSize="12" ID="89" Position="298.6,1863.9">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="1" Style="Rounded"/>
+         </Appearance>
+         <String>para encontrar un elemento con un atributo </String>
+         <ConnectedNoteIDs>91-92, 94, 96</ConnectedNoteIDs>
+      </Note>
+      <Note Width="33.9844" FontSize="12" ID="90" Position="516.7,1734.7">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="1" Style="Rounded"/>
+         </Appearance>
+         <String># id</String>
+         <ConnectedNoteIDs>91</ConnectedNoteIDs>
+      </Note>
+      <Note Width="156.25" FontSize="12" ID="91" Position="301.4,1731.9">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="1" Style="Rounded"/>
+         </Appearance>
+         <String>encuentra los elementos con atributo “ id “</String>
+         <ConnectedNoteIDs>84, 89-90</ConnectedNoteIDs>
+      </Note>
+      <Note Width="133.203" FontSize="12" ID="92" Position="504.2,1826.4">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="1" Style="Rounded"/>
+         </Appearance>
+         <String>[ nombre del atributo ]</String>
+         <ConnectedNoteIDs>89, 93</ConnectedNoteIDs>
+      </Note>
+      <Note Width="156.25" FontSize="12" ID="93" Position="731.9,1833.3">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="1" Style="Rounded"/>
+         </Appearance>
+         <String>encuentra elementos con el nombre del atributo</String>
+         <ConnectedNoteIDs>92</ConnectedNoteIDs>
+      </Note>
+      <Note Width="156.25" FontSize="12" ID="95" Position="756.9,1918.0">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="1" Style="Rounded"/>
+         </Appearance>
+         <String>encuentra elementos coin un atributo y un valor especifico</String>
+         <ConnectedNoteIDs>94</ConnectedNoteIDs>
+      </Note>
+      <Note Width="193.056" FontSize="12" ID="94" Position="493.1,1923.8">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="1" Style="Rounded"/>
+         </Appearance>
+         <String>[ nombre del atributo = “ valor “ ]</String>
+         <ConnectedNoteIDs>89, 95</ConnectedNoteIDs>
+      </Note>
+      <Note Width="405.556" FontSize="12" ID="96" Position="291.7,2016.6">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="1" Style="Rounded"/>
+         </Appearance>
+         <String>[ nombre del atributo = “ valor “ ] [ nombre del otro atributo = “ valor “ ] </String>
+         <ConnectedNoteIDs>89, 97</ConnectedNoteIDs>
+      </Note>
+      <Note Width="156.25" FontSize="12" ID="97" Position="775.0,2008.3">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="1" Style="Rounded"/>
+         </Appearance>
+         <String>encuentra elementos con dos o mas atributos</String>
+         <ConnectedNoteIDs>96</ConnectedNoteIDs>
+      </Note>
+      <Note Width="52.7344" FontSize="12" ID="98" Position="251.4,2070.8">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="1" Style="Rounded"/>
+         </Appearance>
+         <String>Clases</String>
+         <ConnectedNoteIDs>84, 99</ConnectedNoteIDs>
+      </Note>
+      <Note Width="156.25" FontSize="12" ID="99" Position="255.6,2131.9">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="1" Style="Rounded"/>
+         </Appearance>
+         <String>para encontrar clases se usa</String>
+         <ConnectedNoteIDs>98, 100, 104</ConnectedNoteIDs>
+      </Note>
+      <Note Width="16.7969" FontSize="12" ID="100" Position="488.9,2136.1">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="1" Style="Rounded"/>
+         </Appearance>
+         <String>.</String>
+         <ConnectedNoteIDs>99, 101</ConnectedNoteIDs>
+      </Note>
+      <Note Width="58.2031" FontSize="12" ID="101" Position="541.7,2137.5">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="1" Style="Rounded"/>
+         </Appearance>
+         <String>ejemplo</String>
+         <ConnectedNoteIDs>100, 102</ConnectedNoteIDs>
+      </Note>
+      <Note Width="41.0156" FontSize="12" ID="102" Position="633.3,2134.7">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="1" Style="Rounded"/>
+         </Appearance>
+         <String>. rojo</String>
+         <ConnectedNoteIDs>101, 103</ConnectedNoteIDs>
+      </Note>
+      <Note Width="139.453" FontSize="12" ID="103" Position="731.9,2141.6">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="1" Style="Rounded"/>
+         </Appearance>
+         <String>encuentra la clase rojo</String>
+         <ConnectedNoteIDs>102</ConnectedNoteIDs>
+      </Note>
+      <Note Width="156.25" FontSize="12" ID="104" Position="254.2,2211.1">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="1" Style="Rounded"/>
+         </Appearance>
+         <String>se puede buscar primero un elemento y despues la clase</String>
+         <ConnectedNoteIDs>99, 105-106</ConnectedNoteIDs>
+      </Note>
+      <Note Width="48.0469" FontSize="12" ID="105" Position="487.5,2233.3">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="1" Style="Rounded"/>
+         </Appearance>
+         <String>td.rojo</String>
+         <ConnectedNoteIDs>104</ConnectedNoteIDs>
+      </Note>
+      <Note Width="156.25" FontSize="12" ID="106" Position="265.3,2297.2">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="1" Style="Rounded"/>
+         </Appearance>
+         <String>encontrar nodos hijos del elemento seleccionado</String>
+         <ConnectedNoteIDs>104, 107</ConnectedNoteIDs>
+      </Note>
+      <Note Width="65.2344" FontSize="12" ID="107" Position="475.0,2306.9">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="1" Style="Rounded"/>
+         </Appearance>
+         <String>td.rojo>td</String>
+         <ConnectedNoteIDs>106</ConnectedNoteIDs>
+      </Note>
+      <Note Width="156.25" FontSize="12" ID="108" Position="744.4,1529.1">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="1" Style="Rounded"/>
+         </Appearance>
+         <String>para encontrar dos tipos de elementos se separa con coma </String>
+         <ConnectedNoteIDs>86, 109</ConnectedNoteIDs>
+      </Note>
+      <Note Width="36.3281" FontSize="12" ID="109" Position="797.2,1647.2">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="1" Style="Rounded"/>
+         </Appearance>
+         <String>tr, td</String>
+         <ConnectedNoteIDs>108</ConnectedNoteIDs>
+      </Note>
+      <Note Width="156.25" FontSize="12" ID="110" Position="120.8,2401.4">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="1" Style="Rounded"/>
+         </Appearance>
+         <String>para encontrar atributos que empiezan con una cadena</String>
+         <ConnectedNoteIDs>84, 111</ConnectedNoteIDs>
+      </Note>
+      <Note Width="333.333" FontSize="12" ID="111" Position="394.4,2418.0">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="1" Style="Rounded"/>
+         </Appearance>
+         <String>[ nombre ^= “ palabra con la que empieza la cadena“ ]</String>
+         <ConnectedNoteIDs>110</ConnectedNoteIDs>
+      </Note>
+      <Note Width="333.333" FontSize="12" ID="112" Position="369.9,2514.6">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="1" Style="Rounded"/>
+         </Appearance>
+         <String>[ nombre * = “ palabra que esta en la cadena“ ]</String>
+         <ConnectedNoteIDs>113</ConnectedNoteIDs>
+      </Note>
+      <Note Width="156.25" FontSize="12" ID="113" Position="130.6,2494.4">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="1" Style="Rounded"/>
+         </Appearance>
+         <String>para encontrar atributos que contienen una cadena se usa  *</String>
+         <ConnectedNoteIDs>112</ConnectedNoteIDs>
+      </Note>
+      <Note Width="156.25" FontSize="12" ID="114" Position="118.1,2587.5">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="1" Style="Rounded"/>
+         </Appearance>
+         <String>para encontrar atributos en la que la palabra esta al final de una cadena se usa  $ 
+</String>
+         <ConnectedNoteIDs>115</ConnectedNoteIDs>
+      </Note>
+      <Note Width="319.444" FontSize="12" ID="115" Position="341.7,2609.7">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="1" Style="Rounded"/>
+         </Appearance>
+         <String>[ nombre $ = “ palabra que esta al final de la cadena“ ]</String>
+         <ConnectedNoteIDs>114</ConnectedNoteIDs>
+      </Note>
+      <Note Width="276.389" FontSize="18" ID="116" Position="1247.2,1540.2">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="1" Style="Rounded"/>
+         </Appearance>
+         <Formatting>
+            <FormatRange Bold="Yes">0,46</FormatRange>
+         </Formatting>
+         <String>Encontrando elementos de una pagina con Python</String>
+      </Note>
+      <Note Width="26.1719" FontSize="12" ID="117" Position="1295.8,1631.9">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="1" Style="Rounded"/>
+         </Appearance>
+         <String>ID</String>
+         <ConnectedNoteIDs>125</ConnectedNoteIDs>
+      </Note>
+      <Note Width="58.2031" FontSize="12" ID="118" Position="1281.9,1688.9">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="1" Style="Rounded"/>
+         </Appearance>
+         <String>Nombre</String>
+         <ConnectedNoteIDs>126</ConnectedNoteIDs>
+      </Note>
+      <Note Width="46.4844" FontSize="12" ID="119" Position="1288.9,1755.5">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="1" Style="Rounded"/>
+         </Appearance>
+         <String>Xpath</String>
+         <ConnectedNoteIDs>127</ConnectedNoteIDs>
+      </Note>
+      <Note Width="40.2344" FontSize="12" ID="120" Position="1290.3,1815.2">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="1" Style="Rounded"/>
+         </Appearance>
+         <String>texto</String>
+         <ConnectedNoteIDs>128</ConnectedNoteIDs>
+      </Note>
+      <Note Width="80.8594" FontSize="12" ID="121" Position="1279.2,1888.9">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="1" Style="Rounded"/>
+         </Appearance>
+         <String>texto parcial</String>
+         <ConnectedNoteIDs>129</ConnectedNoteIDs>
+      </Note>
+      <Note Width="105.859" FontSize="12" ID="122" Position="1269.4,1954.1">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="1" Style="Rounded"/>
+         </Appearance>
+         <String>tipo de elemento</String>
+         <ConnectedNoteIDs>130</ConnectedNoteIDs>
+      </Note>
+      <Note Width="46.4844" FontSize="12" ID="123" Position="1300.0,2020.8">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="1" Style="Rounded"/>
+         </Appearance>
+         <String>Clase</String>
+         <ConnectedNoteIDs>131</ConnectedNoteIDs>
+      </Note>
+      <Note Width="87.1094" FontSize="12" ID="124" Position="1277.8,2091.6">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="1" Style="Rounded"/>
+         </Appearance>
+         <String>CSS selector</String>
+         <ConnectedNoteIDs>132</ConnectedNoteIDs>
+      </Note>
+      <Note Width="211.111" FontSize="12" ID="125" Position="1406.9,1630.5">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="1" Style="Rounded"/>
+         </Appearance>
+         <String>find_element(By.id, “elemento”)</String>
+         <ConnectedNoteIDs>117</ConnectedNoteIDs>
+      </Note>
+      <Note Width="222.222" FontSize="12" ID="126" Position="1415.3,1683.3">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="1" Style="Rounded"/>
+         </Appearance>
+         <String>find_element(By.name, “elemento”)</String>
+         <ConnectedNoteIDs>118</ConnectedNoteIDs>
+      </Note>
+      <Note Width="218.056" FontSize="12" ID="127" Position="1420.8,1750.0">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="1" Style="Rounded"/>
+         </Appearance>
+         <String>find_element(By.xpath, “elemento”)</String>
+         <ConnectedNoteIDs>119</ConnectedNoteIDs>
+      </Note>
+      <Note Width="69.1406" FontSize="12" ID="128" Position="1468.1,1813.9">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="1" Style="Rounded"/>
+         </Appearance>
+         <String>“” By.text“”</String>
+         <ConnectedNoteIDs>120</ConnectedNoteIDs>
+      </Note>
+      <Note Width="73.8281" FontSize="12" ID="129" Position="1470.8,1888.9">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="1" Style="Rounded"/>
+         </Appearance>
+         <String>“ By.text…”</String>
+         <ConnectedNoteIDs>121</ConnectedNoteIDs>
+      </Note>
+      <Note Width="74.6094" FontSize="12" ID="130" Position="1470.8,1950.0">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="1" Style="Rounded"/>
+         </Appearance>
+         <String>“By.type…”</String>
+         <ConnectedNoteIDs>122</ConnectedNoteIDs>
+      </Note>
+      <Note Width="67.5781" FontSize="12" ID="131" Position="1476.4,2013.9">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="1" Style="Rounded"/>
+         </Appearance>
+         <String>“By.class”</String>
+         <ConnectedNoteIDs>123</ConnectedNoteIDs>
+      </Note>
+      <Note Width="48.0469" FontSize="12" ID="132" Position="1494.4,2083.3">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="1" Style="Rounded"/>
+         </Appearance>
+         <String>“By….</String>
+         <ConnectedNoteIDs>124</ConnectedNoteIDs>
+      </Note>
+   </Notes>
+   <AutoFit>0-1, 3, 5, 8, 10, 12, 14, 16-17, 24-25, 27-30, 32-33, 36-38, 40-41, 43-44, 46, 48, 50, 53-54, 57-59, 64, 70, 72, 74, 80-81, 84, 87-88, 90, 92, 98, 100-103, 105, 107, 109, 117-124, 128-132</AutoFit>
+   <NoteStyles>
+      <Style AffectFontStyle="No" AffectTextColor="No" AffectSize="No" Name="Bubble (Green)" ID="36F452C2-FD7B-430A-807F-84EB666E2C1A" AffectSticky="No" AffectNoteBody="Yes" AffectFade="No" AffectAlignment="No">
+         <BorderThickness>1</BorderThickness>
+         <BorderColor>0.669413 0.885237 0.56701</BorderColor>
+         <FillColor>0.743786 0.983612 0.629999</FillColor>
+      </Style>
+      <Style AffectFontStyle="No" AffectTextColor="No" AffectSize="No" Name="Bubble (Blue)" ID="4229AFA9-C6EE-4D73-A4D3-F9BF7861E3BD" AffectSticky="No" AffectNoteBody="Yes" AffectFade="No" AffectAlignment="No">
+         <BorderThickness>1</BorderThickness>
+         <BorderColor>0.668971 0.810269 0.895079</BorderColor>
+         <FillColor>0.743297 0.900298 0.994537</FillColor>
+      </Style>
+      <Style AffectFontStyle="No" AffectTextColor="No" AffectSize="No" Name="Bubble (Pink)" ID="C3AF939B-4F7A-4A4F-B0CF-B5326A2722CE" AffectSticky="No" AffectNoteBody="Yes" AffectFade="No" AffectAlignment="No">
+         <BorderThickness>1</BorderThickness>
+         <BorderColor>0.894545 0.707759 0.715892</BorderColor>
+         <FillColor>0.98912 0.814084 1.0</FillColor>
+      </Style>
+      <Style AffectFontStyle="No" AffectTextColor="No" AffectSize="No" Name="Bubble (Red)" ID="1419E780-3044-4352-9896-9ECDCDF08842" AffectSticky="No" AffectNoteBody="Yes" AffectFade="No" AffectAlignment="No">
+         <BorderThickness>1</BorderThickness>
+         <BorderColor>0.894545 0.707759 0.715892</BorderColor>
+         <FillColor>0.993942 0.786389 0.795438</FillColor>
+      </Style>
+      <Style AffectFontStyle="No" AffectTextColor="Yes" AffectSize="No" Name="Red Text" ID="2F6D0845-3CCB-4441-91CC-99EE546E884E" AffectSticky="No" AffectNoteBody="No" AffectFade="No" AffectAlignment="No">
+         <TextColor>0.985946 0.0 0.026947</TextColor>
+      </Style>
+      <Style AffectFontStyle="No" AffectTextColor="No" AffectSize="No" Name="Bubble (Yellow)" ID="9302B67D-C92B-4001-9A11-2B84D79D6560" AffectSticky="No" AffectNoteBody="Yes" AffectFade="No" AffectAlignment="No">
+         <BorderThickness>1</BorderThickness>
+         <BorderColor>0.877745 0.828275 0.562127</BorderColor>
+         <FillColor>0.97528 0.920302 0.624582</FillColor>
+      </Style>
+      <Style AffectFontStyle="Yes" AffectTextColor="No" AffectSize="No" Name="Title Text" ID="AD920895-9279-4880-B149-F31884ED7548" AffectSticky="No" AffectNoteBody="No" AffectFade="No" AffectAlignment="Yes">
+         <IsBold>Yes</IsBold>
+         <FontSize>28.0</FontSize>
+      </Style>
+   </NoteStyles>
+   <UISettings>
+      <BackgroundColor>1.0 0.988373 0.949905</BackgroundColor>
+      <DefaultFont>Arial</DefaultFont>
+      <DefaultTextColor/>
+      <NoteXPadding>8.00</NoteXPadding>
+   </UISettings>
+   <PrintSettings VerticalPagination="Auto" TopMargin="12.000000" PaperType="iso-a4" ScaleFactor="1.000000" VerticallyCentered="Yes" HorizontalPagination="Clip" Orientation="Portrait" PagesAcross="1" PaperSize="-1.000000,-1.000000" LeftMargin="12.000000" RightMargin="12.000000" PagesDown="1" Collates="Yes" HorizontallyCentered="Yes" BottomMargin="12.000000"/>
+</ScappleDocument>
