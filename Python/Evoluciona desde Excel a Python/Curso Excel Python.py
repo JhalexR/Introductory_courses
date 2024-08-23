@@ -291,3 +291,37 @@ fifa_final["Nacion"] = fifa_final["Nationality"].str.upper()
 fifa_final["Nacion"] = fifa_final["Nationality"].str.capitalize()
 # reemplazar texto
 fifa_final["Nacion"] = fifa_final["Nationality"].str.replace("a","o") # reemplazar letras "a" por "o"
+
+# funcion Group By
+
+# en Python funciona en tres pasos
+# primero se puede separar por algunas de las variables/columnas en grupos
+# segundo aplicar una operación como sumar contar promedio etc a estos datos
+# tercero combinar los datos
+
+# Primer paso
+Grupo = fifa_final.groupby("Nationality") # con esta intruccion guarda en la variable un grupo por cada dato que exista con la variable/columna
+# se puede visualizar alguno de los grupos por ejemplo nacionalidad = "Chile"
+tabla_Chile = Grupo.get_group("Chile") # guardar la tabla con los datos que en la columna "Nationality" tengan "Chile" 
+# se puede mostrar cualquier nacionalidad 
+
+# mostrar promedio "mean()"
+promedio = fifa_final.groupby("Nationality")["Age"].mean() # muestra el promedio de edad para cada pais
+# con dos argumentos tabla con dos niveles
+# agrupa primero por nacionalidad en cada nacionalidad agrupa por club y despues el promedio de dedad por cada club
+promedio = fifa_final.groupby(["Nationality", "club"])["Age"].mean() 
+
+# se puede hacer tablas con varias agrupaciones sin usar "get_group" para guardar todo en un solo paso
+Chile_edad = fifa_final[fifa_final["Nationality"]=="Chile"].groupby("Proximo_retiro","club")["Age"].mean()
+# se agrupo primero los datos que en la columna "Nationality" = "Chile", despues se agrupo por "Proximo_retiro" y "Club" 
+# y se saco el promedio de edad por "club" y s eguardo en la variable.
+
+# hacer mas de un calculo de una columna
+# en este caso de los datos de "Naitonality" = "Chile" se agrupan los valores que tiene "Proximo_retiro"
+# y con los datos de "Age" se calcula el promedio (np.mean) y la desviacion estandar (np.std)
+Chile_edad = tabla_Chile.groupby(["Proximo_retiro"])["Age"].agg(np.mean, np.std)
+
+# aplicar funcion colocando mas de una columna en valores aplicando funciones o calculos diferentes
+Chile_edad = tabla_Chile.groupby(["Proximo_retiro"]).agg({'Age':np.mean, 'weak_foot':np.sum})
+# crea la tabla con los datos de "Naitonality" = "Chile" guardados en la variable "tabla_Chile" 
+# la primera fila es "Proximo_retiro" crea dos columnas una con el promedio de "Age" y otra con la suma de weak_foot
