@@ -325,3 +325,29 @@ Chile_edad = tabla_Chile.groupby(["Proximo_retiro"])["Age"].agg(np.mean, np.std)
 Chile_edad = tabla_Chile.groupby(["Proximo_retiro"]).agg({'Age':np.mean, 'weak_foot':np.sum})
 # crea la tabla con los datos de "Naitonality" = "Chile" guardados en la variable "tabla_Chile" 
 # la primera fila es "Proximo_retiro" crea dos columnas una con el promedio de "Age" y otra con la suma de weak_foot
+
+# Pivot_table 
+# funcion para creacion de tablas dinamicas similar a funcion GroupBY 
+# pero se parece mas a las opciones de pivto table de Excel
+Tabla_dinamica = pd.pivot_table(fifa_final, index="Nationality", values="Age", aggfunc="mean")
+# index = rows, values = valores en Excel, "aggfunc" -> para agregar funcion con los datos, "mean" = promedio, 
+
+# tabla dinamica con funcione "fill_value=0" -> para rellenar espacios en blanco con 0, funciones "margin" para crear totales y el nombre del total
+Tabla_dinamica_club = pd.pivot_table(fifa_final, index="club", values="Jersey Number", aggfunc="std", fill_value=0, margins=True, margins_name="Total")
+
+# agregar columnas con la funcion "columns="
+Tabla_dinamica_body = pd.pivot_table(fifa_final[(fifa_final["Body type"]!="sin datos") & (fifa_final["Real face"]!="sin datos")], index="body_type", columns="real face", values="Jersey Number", aggfunc="std", fill_value=0, margins=True, margins_name="Total")
+# se filtra la base de datos quitando las filas en las que las variables "body_type" y "real face" no tienen datos se coloca como indice o rows los datos de la columna "Body type" se agrega la columna "Real face" y la columna "Jersey numbres" se le calcula desviacnon estandar
+
+# agregar dos calculos a la misma columna en este caso promedio y desviacion estandar
+Tabla_dinamica_body = pd.pivot_table(fifa_final[(fifa_final["Body type"]!="sin datos") & (fifa_final["Real face"]!="sin datos")], index="body_type", columns="real face", values="Jersey Number", aggfunc=["mean", "std"], fill_value=0, margins=True, margins_name="Total")
+# en este caso al colocar aggfunc=["mean", "std"] los dos calculos que queremos hacer, aparecera las columnas divididas primero por promedio del "Jersey Number" dividido en los datos de la columna "real face" 
+# lo mismo con la desviacion estandar de "Jersey Number" tambien divididos por los datos de la columna "real face"
+
+# agregar el mismo calculo a dos variables en este caso "Jersey Number" y "Age" promedio
+Tabla_dinamica_body = pd.pivot_table(fifa_final[(fifa_final["Body type"]!="sin datos") & (fifa_final["Real face"]!="sin datos")], index="body_type", values="Jersey Number", aggfunc=({"Jersey Number":"mean", "Age":"std"}),fill_value=0)
+# en este caso no es necesario usar "columns" automaticamente se creara una columna con el promedio de "Jersey Number" y otra con el promedio de "Age"
+
+# agregar otro nivel al index u otra row o fila a la tabla solamente debemos agregarla index=["body_type", "Real face"]
+Tabla_dinamica_body = pd.pivot_table(fifa_final[(fifa_final["Body type"]!="sin datos") & (fifa_final["Real face"]!="sin datos")], index=["body_type", "Real face"], values="Jersey Number", aggfunc=({"Jersey Number":"mean", "Age":"std"}),fill_value=0)
+# de esta forma tendremos dos agrupamientos en las filas
