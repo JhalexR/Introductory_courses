@@ -335,7 +335,7 @@ Tabla_dinamica = pd.pivot_table(fifa_final, index="Nationality", values="Age", a
 # tabla dinamica con funcione "fill_value=0" -> para rellenar espacios en blanco con 0, funciones "margin" para crear totales y el nombre del total
 Tabla_dinamica_club = pd.pivot_table(fifa_final, index="club", values="Jersey Number", aggfunc="std", fill_value=0, margins=True, margins_name="Total")
 
-# agregar columnas con la funcion "columns="
+# agregar columnas con la funcion "columns"
 Tabla_dinamica_body = pd.pivot_table(fifa_final[(fifa_final["Body type"]!="sin datos") & (fifa_final["Real face"]!="sin datos")], index="body_type", columns="real face", values="Jersey Number", aggfunc="std", fill_value=0, margins=True, margins_name="Total")
 # se filtra la base de datos quitando las filas en las que las variables "body_type" y "real face" no tienen datos se coloca como indice o rows los datos de la columna "Body type" se agrega la columna "Real face" y la columna "Jersey numbres" se le calcula desviacnon estandar
 
@@ -351,3 +351,15 @@ Tabla_dinamica_body = pd.pivot_table(fifa_final[(fifa_final["Body type"]!="sin d
 # agregar otro nivel al index u otra row o fila a la tabla solamente debemos agregarla index=["body_type", "Real face"]
 Tabla_dinamica_body = pd.pivot_table(fifa_final[(fifa_final["Body type"]!="sin datos") & (fifa_final["Real face"]!="sin datos")], index=["body_type", "Real face"], values="Jersey Number", aggfunc=({"Jersey Number":"mean", "Age":"std"}),fill_value=0)
 # de esta forma tendremos dos agrupamientos en las filas
+
+# agregar mas de una columna sin la funcion "columns" y con la funcion "aggfunc"
+posicion = pd.pivot_table(fifa_final, index="position", aggfunc=({"cuenta":"sum", "Age":"mean"}))
+# En la columna "cuenta" se calcula la suma y en la columna "Age" el promedio de edad
+
+# renombrar columnas 
+posicion.columns = ["Position","Edad", "Futbolistas"]
+# los anteriores nombres cuenta y Age son reemplazados
+
+# nueva columna similar a campo calculado
+posicion["Ratio"] = posicion["futbolistas"]/posicion["Edad"]
+# la nueva columna es la ratio entre el futbolistas / edad
