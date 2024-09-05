@@ -65,14 +65,14 @@ public class String_of_char {
             }
             else 
                 f++;            
-        } while (sequence[f] != null);
+        } while (sequence[f] != null || f < array_size-1);
 
     }
 
     // metodo para mostar la palabra mas larga asi como su posicion de inicio dentro del arreglo
     public void longest_word () {
 
-        System.out.println("La palabra mas larga en el arreglo inicia en el indice: "+prompter);
+        System.out.println("La palabra mas larga en el arreglo inicia en la posición: "+prompter);
         System.out.println("La palabra mas larga en el arreglo es: ");
         for(int f = prompter; f < chain_size; f++) 
             System.out.print(sequence[f]);
