@@ -1,13 +1,18 @@
 package Estructura_de_Datos.Subgrupo_29.Primera_entrega_Ejercicio_3;
 
-/*Author: John Alexander Peñaloza Rojas
- * 
+/*  Authors: 
+    John Alexander Peñaloza Rojas
+    
+    Modulo: Estructura de datos - Segundo semestre 2024
+    Grupo: B01 - subgrupo: 29
+    fecha: 05/09/2024
 */
 
 import java.util.Scanner;
 
 public class String_of_char {
 
+    // creacion de atributos 
     protected String sequence[];    
     protected int array_size;
     protected int chain_size;
@@ -15,40 +20,40 @@ public class String_of_char {
     protected Scanner Dat;
 
 
-    public String_of_char(){
+    /* metodo constructor */
+    public String_of_char () {
         
+        // se inicializan los atributos de la clase
         System.out.print("Introduce el tamaño del arreglo: ");
-        Dat = new Scanner(System.in); 
+        Dat = new Scanner(System.in); // se solicita al usuario el tamaño total del arreglo
         array_size = Dat.nextInt();
         sequence = new String[array_size-1];
-        for(int f = 0;f < array_size; f++) 
+        for(int f = 0;f < array_size; f++)  // se inicializa el vector con las posiciones "null" para facilitar concoer la posicion del ultimo caracter
             sequence[f] = null;
         chain_size = 0;
         prompter = 0;
 
     }
 
-
+    // metodo con el cual se capturan la(s) palabra(s) dentro del arreglo
     public void fill_out_array () {
 
         System.out.println("Escribe una frase, y al finalizar presiona enter: ");
         for(int f = 0;f < array_size; f++)        
-            sequence[f] = Dat.nextLine();
+            sequence[f] = Dat.nextLine(); 
         
-        
-
     }
 
-
+    // metodo con el cual se busca en el arreglo donde inicia la palabra mas larga 
     public void loop_array () {
         
-        int chain_size, prompter, f;
+        int chain_size, prompter, f; // variables del metodo se llaman igual que los atributos para facilitar entender su funcion
         chain_size = prompter = f = 0;
         do  {
             if (sequence[f] != " ") {
                 chain_size++;
                 f++;
-            } else if (chain_size > this.chain_size){
+            } else if (chain_size > this.chain_size){ // en esta parte del ciclo se captura el indice y tamaño de la palabra mas larga
                 this.chain_size = chain_size;
                 this.prompter = prompter;
                 chain_size = 0;
@@ -64,7 +69,7 @@ public class String_of_char {
 
     }
 
-
+    // metodo para mostar la palabra mas larga asi como su posicion de inicio dentro del arreglo
     public void longest_word () {
 
         System.out.println("La palabra mas larga en el arreglo inicia en el indice: "+prompter);
@@ -74,6 +79,7 @@ public class String_of_char {
 
     }
 
+    // metodo main para creacion de objetos e invocar los metodos
     public static void main(String[] args) {
 
         String_of_char String_1 = new String_of_char();
