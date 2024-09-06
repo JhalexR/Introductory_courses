@@ -27,22 +27,36 @@ public class String_of_char {
         System.out.print("Introduce el tamaño del arreglo: ");
         Dat = new Scanner(System.in); // se solicita al usuario el tamaño total del arreglo
         array_size = Dat.nextInt();
-        sequence = new String[array_size-1];
-        for(int f = 0;f < array_size; f++)  // se inicializa el vector con las posiciones "null" para facilitar concoer la posicion del ultimo caracter
-            sequence[f] = null;
+        sequence = new String[array_size];
         chain_size = 0;
         prompter = 0;
 
     }
 
+    public void mostrar_1 (){
+        for(int f = 0; f < array_size; f++) {
+            System.out.print(sequence[f]);
+            System.out.print(f);
+        }
+    }
+
     // metodo con el cual se capturan la(s) palabra(s) dentro del arreglo
     public void fill_out_array () {
-
-        System.out.println("Escribe una frase, y al finalizar presiona enter: ");
-        for(int f = 0;f < array_size; f++)        
-            sequence[f] = Dat.nextLine(); 
         
+        
+        for(int f=0; f < sequence.length; f++) 
+        System.out.println("Escribe la cadena numero: "+f+" y al finalizar presiona enter: ");
+        sequence[f] = Dat.nextLine();        
+               
     }
+
+    public void mostrar_2 (){
+        for(int f = 0; f < array_size; f++) {
+            System.out.print(sequence[f]);
+            System.out.print(f);
+        }
+    }
+
 
     // metodo con el cual se busca en el arreglo donde inicia la palabra mas larga 
     public void loop_array () {
@@ -65,7 +79,7 @@ public class String_of_char {
             }
             else 
                 f++;            
-        } while (sequence[f] != null || f < array_size-1);
+        } while (sequence[f] != null);
 
     }
 
@@ -83,7 +97,9 @@ public class String_of_char {
     public static void main(String[] args) {
 
         String_of_char String_1 = new String_of_char();
+        String_1.mostrar_1();
         String_1.fill_out_array();
+        String_1.mostrar_2();
         String_1.loop_array();
         String_1.longest_word();        
         
