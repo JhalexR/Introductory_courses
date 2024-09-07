@@ -12,7 +12,7 @@ import java.util.Scanner;
 
 public class String_of_char {
 
-    // creacion de atributos 
+    /* creacion de atributos */
     protected String sequence[];    
     protected int size;
     protected int prompter;
@@ -29,7 +29,7 @@ public class String_of_char {
         prompter = 0;
     }
 
-    // metodo con el cual se capturan la(s) candena(s) dentro del arreglo
+    /* metodo con el cual se capturan la(s) candena(s) dentro del arreglo */
     public void fill_out_array () { 
         System.out.println();       
         for(int f=0; f < size; f++) {
@@ -38,7 +38,7 @@ public class String_of_char {
         } 
     }
 
-    // metodo con el cual se busca en el arreglo donde inicia la palabra mas larga 
+    /* metodo con el cual se busca la palabra mas larga en el arreglo */
     public void check_array () {
         int a = 0;        
         for(int f=0; f < size; f++)
@@ -48,7 +48,7 @@ public class String_of_char {
             }
     }
 
-    // metodo para mostar la palabra mas larga asi como su posicion de inicio dentro del arreglo
+    /* metodo para mostar la palabra mas larga asi como su posicion dentro del arreglo */
     public void longest_word () {
         System.out.println();
         System.out.println("La palabra mas larga en el arreglo esta en la posición: "+prompter);
@@ -56,7 +56,7 @@ public class String_of_char {
         System.out.print(sequence[prompter]);
     }
 
-    // metodo main para creacion de objetos e invocar los metodos
+    /* metodo main para creacion de objetos e invocar los metodos */
     public static void main(String[] args) {
         String_of_char String_1 = new String_of_char();
         String_1.fill_out_array();
