@@ -1,6 +1,6 @@
 package Estructura_de_Datos.Subgrupo_29.Primera_entrega_Ejercicio_3;
 
-/*  Authors: 
+/*  Author: 
     John Alexander Peñaloza Rojas
     
     Modulo: Estructura de datos - Segundo semestre 2024
@@ -33,7 +33,7 @@ public class String_of_char {
     public void fill_out_array () { 
         System.out.println();       
         for(int f=0; f < size; f++) {
-        System.out.print("Escribe la palabra numero: "+f+" y presiona enter: ");
+        System.out.print("Escribe la palabra numero: "+(f+1)+" y presiona enter: ");
         sequence[f] = Dat.next();        
         } 
     }
@@ -51,7 +51,7 @@ public class String_of_char {
     /* metodo para mostar la palabra mas larga asi como su posicion dentro del arreglo */
     public void longest_word () {
         System.out.println();
-        System.out.println("La palabra mas larga en el arreglo esta en la posición: "+prompter);
+        System.out.println("La palabra mas larga en el arreglo esta en la posición: "+(prompter+1));
         System.out.print("La palabra mas larga en el arreglo es: ");
         System.out.print(sequence[prompter]);
     }
