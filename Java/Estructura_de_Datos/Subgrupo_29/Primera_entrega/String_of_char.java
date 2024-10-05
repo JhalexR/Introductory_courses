@@ -1,4 +1,4 @@
-package Estructura_de_Datos.Subgrupo_29.Primera_entrega_Ejercicio_3;
+package Estructura_de_Datos.Subgrupo_29.Primera_entrega;
 
 /*  Author: 
     John Alexander Peñaloza Rojas
