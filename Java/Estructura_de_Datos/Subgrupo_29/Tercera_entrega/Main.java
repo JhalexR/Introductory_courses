@@ -1,4 +1,4 @@
-package sucesor;
+package Estructura_de_Datos.Subgrupo_29.Tercera_entrega;
 // Implemente un método que, dado un árbol binario ordenado y un valor, retorne el sucesor del valor en el árbol. Calcule la complejidad temporal del método
 
 class Nodo {
