@@ -21,8 +21,8 @@ public class HashTable{
     public static void main(String[] args){
         HashTable table = new HashTable(41);
         int test;
-        int aux = {10, 49, 35, 95, 41, 37, 38, 31, 48, 23, 42, 20, 74, 52, 54, 24, 98, 11, 67};
-        for(int i=0; i<aux.lenght; i++){
+        int aux []= {10, 49, 35, 95, 41, 37, 38, 31, 48, 23, 42, 20, 74, 52, 57, 54, 24, 98, 11, 67, 79, 82, 43, 33, 97, 40, 49, 68, 65, 45};
+        for(int i=0; i<aux.length; i++){
             test = table.insert(aux[i]);
             System.out.println("x: es"+aux[i]+" f(x) es: "+test);
         }
