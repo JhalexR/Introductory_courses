@@ -1,10 +1,10 @@
 package Estructura_de_Datos.Grafos;
 
-public class grafo {
+public class Grafo {
 
     private boolean A[][];
 
-    public grafo (int nodos){
+    public Grafo (int nodos){
         A = new boolean [nodos][nodos];
     }
 
@@ -22,7 +22,7 @@ public class grafo {
         return A [i][j];
     }
 
-    public static void main (String[ args]) {
+    public static void main (String[] args) {
         Grafo grafo = new Grafo(5);
         grafo.agregarArco(1,2);
         grafo.agregarArco(1,3);
