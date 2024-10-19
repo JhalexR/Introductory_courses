@@ -1,4 +1,4 @@
-package com.example.juego;
+package com.example.musical_notation;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
