@@ -361,5 +361,11 @@ posicion.columns = ["Position","Edad", "Futbolistas"]
 # los anteriores nombres cuenta y Age son reemplazados
 
 # nueva columna similar a campo calculado
-posicion["Ratio"] = posicion["futbolistas"]/posicion["Edad"]
+posicion["Ratio"] = posicion["Futbolistas"]/posicion["Edad"]
 # la nueva columna es la ratio entre el futbolistas / edad
+
+# dar formato con la funcion Style
+posicion.style.format({"Edad":"{0:,.1f}", "Futbolistas":"{0:,.0f}", "Ratio":"{:.2%}"})
+# esto le dara un decimal a "Edad", "Futbolistas" sin decimales y con separacion de miles y ratio en % con dos decimales 
+posicion.style.format({"Edad":"{0:,.1f}", "Futbolistas":"${0:,.0f}", "Ratio":"{:.2%}"})
+# en este ejmplo "Futbolistas" pasaria formato moneda
