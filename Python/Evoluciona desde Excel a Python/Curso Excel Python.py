@@ -369,3 +369,20 @@ posicion.style.format({"Edad":"{0:,.1f}", "Futbolistas":"{0:,.0f}", "Ratio":"{:.
 # esto le dara un decimal a "Edad", "Futbolistas" sin decimales y con separacion de miles y ratio en % con dos decimales 
 posicion.style.format({"Edad":"{0:,.1f}", "Futbolistas":"${0:,.0f}", "Ratio":"{:.2%}"})
 # en este ejmplo "Futbolistas" pasaria formato moneda
+
+# Style formato condicional
+posicion_format = posicion.copy() # copiar tabla en otra variable
+posicion.style.format({"Edad":"{0:,.1f}", "Futbolistas":"${0:,.0f}", "Ratio":"{:.2%}"}).background_gradient_color(cmap = "Greens") 
+# "Greeens_r" es para invertir el mapa de calor
+# la funcion background_gradient_color da el color a la tabla con el color maps cmap degradado como un mapa de calor
+# (cmap = "spring") es para diferentes colores vivos 
+
+posicion.style.format({"Edad":"{0:,.1f}", "Futbolistas":"${0:,.0f}", "Ratio":"{:.2%}"}).highlight_max(color="green")
+# para agregar color solamente al valor mas alto de la columna
+# highlight_min(color="green") es para agregar color solo al valor mas bajo de la comlumna
+
+# para barras de datos de colores
+posicion.style.format({"Edad":"{0:,.1f}", "Futbolistas":"${0:,.0f}", "Ratio":"{:.2%}"}).bar(color="Steelblue")
+
+# funcion subset para solo para aplicar el formato de color a una columna
+posicion.style.format({"Edad":"{0:,.1f}", "Futbolistas":"${0:,.0f}", "Ratio":"{:.2%}"}).bar(subset="Edad", color="Steelblue")
