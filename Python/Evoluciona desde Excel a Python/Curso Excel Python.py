@@ -391,3 +391,13 @@ posicion.style.format({"Edad":"{0:,.1f}", "Futbolistas":"${0:,.0f}", "Ratio":"{:
 # para mostrar una tabla en formato compacto a formato tabular con los datos repetidos
 Tabla_dinamica_body = Tabla_dinamica_body.reset_index()
 Tabla_dinamica_body.melt(id_vars=["Body type", "Real face"])
+
+# funcion Unstack
+# es similar a la funcion transponer de intercambiar columnas como filas
+# colocamos nuevamente como indice "Body type", "Real face" para que quede en formato compacto
+Tabla_dinamica_body = Tabla_dinamica_body.set_index(["Body type", "Real face"])
+Tabla_dinamica_body_unstack = Tabla_dinamica_body.unstack()
+
+# funcion stack
+# sirve para deshacer los cambios de la funcion Unstack
+Tabla_dinamica_body_unstack.stack()
