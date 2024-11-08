@@ -386,3 +386,8 @@ posicion.style.format({"Edad":"{0:,.1f}", "Futbolistas":"${0:,.0f}", "Ratio":"{:
 
 # funcion subset para solo para aplicar el formato de color a una columna
 posicion.style.format({"Edad":"{0:,.1f}", "Futbolistas":"${0:,.0f}", "Ratio":"{:.2%}"}).bar(subset="Edad", color="Steelblue")
+
+# Funcion melt
+# para mostrar una tabla en formato compacto a formato tabular con los datos repetidos
+Tabla_dinamica_body = Tabla_dinamica_body.reset_index()
+Tabla_dinamica_body.melt(id_vars=["Body type", "Real face"])
