@@ -401,3 +401,33 @@ Tabla_dinamica_body_unstack = Tabla_dinamica_body.unstack()
 # funcion stack
 # sirve para deshacer los cambios de la funcion Unstack
 Tabla_dinamica_body_unstack.stack()
+
+# visualización de datos
+# hacer graficas con la libreria Matplotlib
+# con la siguiente linea ya nos mostraria un grafico de barras, la funcion plot es la que nos crea el grafico en este caso de barras
+pd.pivot_table(fifa, index="Nationality", values="cuenta", aggfunc="sum").plot(kind="bar")
+# con la siguiente linea ya nos mostraria un grafico de barras pero ordenado de mayor a mayor en la columna cuentas
+pd.pivot_table(fifa, index="Nationality", values="cuenta", aggfunc="sum").sort_values("cuenta", ascending=False).iloc[0:10].plot(kind="bar")
+
+# otra forma de hacerlo es separando pasos
+# primero guardamos en una variable la tabla pivot table con los indices columnas y operacion que necesitemos
+grafico = pd.pivot_table(fifa, index="Nationality", values="cuenta", aggfunc="sum")
+# despues ordenamos esa variable 
+grafico.sort_values("cuenta", ascending=False, inplace=True) # la funcion in place para guardar los cambios en el grafico
+# despues hacemos el grafico de con la función plot en este caso agregamos un color a las barras
+grafico.iloc[0:10].plot(kind="bar", colorbar="green")
+
+# grafico de lineas
+grafico.iloc[0:10].plot(kind="line", colorbar="green")
+
+# grafico histograma
+plt.hist(fifa_2["Age"])
+
+# grafico histograma colocando numero de intervalos
+plt.hist(fifa_2["Age"], bins=8)
+
+# grafico scatter 
+plt.scatter(x=fifa_2["Age"], y=fifa_2["Potential"])
+
+# grafico scatter con otro dato
+plt.scatter(x=fifa_2["Overall"], y=fifa_2["Potential"])
