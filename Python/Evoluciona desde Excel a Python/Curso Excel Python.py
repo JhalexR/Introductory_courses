@@ -431,3 +431,21 @@ plt.scatter(x=fifa_2["Age"], y=fifa_2["Potential"])
 
 # grafico scatter con otro dato
 plt.scatter(x=fifa_2["Overall"], y=fifa_2["Potential"])
+
+# Mejorando los graficos
+# Funcion Matplotlib inline
+grafico = pd.pivot_table(fifa, index="Nationality", values="cuenta", aggfunc="sum")
+grafico.sort_values("cuenta", ascending=False, inplace=True)
+# funcion figzsize tamaño de la grafica primer argumento de alto y ancho de grafico
+grafico.iloc[0:10].plot(kind="bar", colorbar="green", figsize=(16,9))
+# colocar titulo fontsize para la fuente del titulo y backgroundcolor color de relleno
+plt.title("los 10 paises con mas jugadores en fifa 19", fontsize=18, backgroundcolor="Grey" )
+# titulos de los ejes 
+plt.xlabel("paises", fontsize=12)
+plt.ylabel("cantidad de jugadores", fontsize=12)
+
+# grafica de torta
+grafico.iloc[0:10].plot(kind="pie", colorbar="green", figsize=(16,9), subplots=True)
+
+# Guardar un archivo de imagen del grafico en la carpeta donde se ejecuta el codigo
+plt.savefig("Grafico de barras.jpeg", dpi=500)
