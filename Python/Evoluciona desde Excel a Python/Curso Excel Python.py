@@ -4,6 +4,8 @@
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
+import plotly.graph_objs as go
+import plotly.express as px
 
 # Cargando base de datos
 
@@ -449,3 +451,11 @@ grafico.iloc[0:10].plot(kind="pie", colorbar="green", figsize=(16,9), subplots=T
 
 # Guardar un archivo de imagen del grafico en la carpeta donde se ejecuta el codigo
 plt.savefig("Grafico de barras.jpeg", dpi=500)
+
+# Graficos en Plotly 
+# se uso lineas mas arriba:
+# import plotly.graph_objs as go
+# import plotly.express as px
+grafico_plotly = pd.pivot_table(fifa, index="Nationality", values="cuenta", aggfunc="sum")
+grafico_plotly.columns.values
+px.bar (grafico_plotly, X=grafico_plotly.index, y=grafico_plotly["cuenta"])
