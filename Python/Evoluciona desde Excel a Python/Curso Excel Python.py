@@ -456,6 +456,7 @@ plt.savefig("Grafico de barras.jpeg", dpi=500)
 # se uso lineas mas arriba:
 # import plotly.graph_objs as go
 # import plotly.express as px
+# guardar en variable la tabal dinamica para el grafico
 grafico_plotly = pd.pivot_table(fifa, index="Nationality", values="cuenta", aggfunc="sum")
 grafico_plotly.columns.values
 px.bar (grafico_plotly, X=grafico_plotly.index, y=grafico_plotly["cuenta"])
