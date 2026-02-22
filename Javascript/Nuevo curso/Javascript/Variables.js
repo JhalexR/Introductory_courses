@@ -65,7 +65,29 @@ console.log(nombre2);
 //imprimir variables
 console.log(apellido);
 
-//variables con const
-const edad = 30;
 
-console.log(edad);
+
+//variables con const
+const NUMERO_PI = 3.14;
+
+//imprimir constantes
+console.log(NUMERO_PI);
+
+// no se puede reasignar una constante
+NUMERO_PI = 4;
+
+// esta impresion no se ejecuta porque se produce un error al intentar reasignar una constante
+console.log(NUMERO_PI);
+
+/*
+imprimir variables con backticks
+
+los backticks permiten incluir variables dentro de una cadena de texto utilizando 
+la sintaxis ${variable} y también permiten escribir cadenas de texto en varias líneas 
+sin necesidad de usar caracteres especiales. 
+*/
+let nombre3 = "Carlos";
+console.log(`Hola, mi nombre es ${nombre3}`); //imprime "Hola, mi nombre es Carlos" 
+console.log(`Hola, mi nombre es ${nombre3}
+    
+y tengo 25 años`); //imprime "Hola, mi nombre es Carlos y tengo 25 años" en dos lineas
