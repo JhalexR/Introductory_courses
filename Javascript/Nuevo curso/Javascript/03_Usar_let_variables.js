@@ -31,7 +31,7 @@ console.log(contador); // 2
 No puedes declarar otra vez la misma variable con let en el mismo bloque.
 */
 let edad = 20;
-let edad = 25; // ❌ Error: Identifier 'edad' has already been declared
+// let edad = 25; // ❌ Error: Identifier 'edad' has already been declared
 
 // Sin embargo, sí puedes usar el mismo nombre en bloques distintos:
 let numero = 10;
