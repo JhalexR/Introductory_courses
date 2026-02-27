@@ -24,3 +24,13 @@ comsole.log(saludar('Alex'));
 var suma = function (a, b){ //no se le asigna un nombre
 	return a + b;
 }
+
+// funciones arrow 
+var restar =(a, b) => {
+	return a - b;
+}
+
+console.log(restar(4, 2));
+
+var multiplicar = (a, b) => a * b; // el return esta implícito 
+cosole.log(mutlplicar (2, 2));
