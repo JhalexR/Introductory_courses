@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="src/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
+    <script src="sql.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Constructora el Progreso</title>
+  </head>
+
+  <body>
+    <!--Sección de Menú de Navegación-->
+      <nav class="nav">
+        <ul class="menu">
+          <!--Menu de navegacion -->
+          <li><a href="#">Inicio</a></li>
+          <li><a href="#">Proyectos</a></li>
+          <li><a href="#">Contacto</a></li>
+        </ul>
+      </nav>
+    </section> 
+
+    <!--Hero-->
+    <section class="hero">
+      <div class="overlay"></div>
+
+      <div class="contenido">
+        <h1>Construimos el futuro que imaginas</h1>
+        <p>
+          Diseño, construcción y remodelación con altos estándares de calidad.
+        </p>
+
+        <div class="botones">
+          <button class="btn-primary" onclick="whatsapp(www.google.com)">Contáctanos</button>
+          <button class="btn-secondary">Ver proyectos</button>
+        </div>
+      </div>
+    </section>
+    <!--Proyectos mejorado-->
+    <section class="proyectos">
+      <h2>Nuestros Proyectos</h2>
+
+      <div class="grid">
+        <div class="card">
+          <img
+            src="https://http2.mlstatic.com/D_NQ_NP_2X_897120-MCO95840645023_102025-N.webp"
+          />
+          <div class="overlay">
+            <h3>Proyecto Residencial</h3>
+            <p>Construcción de vivienda moderna</p>
+            <button>Ver más</button>
+          </div>
+        </div>
+
+        <div class="card">
+          <img
+            src="https://img.freepik.com/fotos-premium/ingenieros-arquitectos-asiaticos-colaborando-proyecto-construccion-moderna-al-atardecer_62294-5291.jpg?semt=ais_rp_progressive&w=740&q=80"
+          />
+          <div class="overlay">
+            <h3>Edificio Corporativo</h3>
+            <p>Diseño y ejecución</p>
+            <button>Ver más</button>
+          </div>
+        </div>
+
+        <div class="card">
+          <img
+            src="https://arquitectura.medellin.unal.edu.co/escuelas/habitat/galeria/albums/Cehap/MedellinMarcadas2/normal_DSC06519_28Copiar29.JPG"
+          />
+          <div class="overlay">
+            <h3>Remodelación</h3>
+            <p>Transformación de espacios</p>
+            <button>Ver más</button>
+          </div>
+        </div>
+      </div>
+    </section>
+<!--Sección filtro por estado, ciudad y tipo de construcción-->
+    <section class="filtros">
+  <h2>Filtrar proyectos</h2>
+
+  <select id="filtroEstado">
+    <option value="">Todos</option>
+    <option value="terminado">Terminados</option>
+    <option value="construccion">En construcción</option>
+  </select>
+
+  <select id="filtroCiudad">
+    <option value="">Todas las ciudades</option>
+    <option value="Bogotá">Bogotá</option>
+    <option value="Medellín">Medellín</option>
+  </select>
+
+  <select id="filtroTipo">
+    <option value="">Todos los tipos</option>
+    <option value="Residencial">Residencial</option>
+    <option value="Comercial">Comercial</option>
+  </select>
+</section>
+
+<!-- RESULTADOS -->
+<section id="resultados"></section>
+
+    <!--Sección Carrusel-->
+    <div class="carrusel">
+      <div class="slides" id="slides">
+        <div class="slide activo">
+          <img src="/src/car1.jpg" />
+          <div class="contenido">
+            <h2>Construimos tus sueños</h2>
+            <p>Proyectos modernos y seguros para tu familia.</p>
+            <button onclick="contactar()">Contáctanos</button>
+          </div>
+        </div>
+
+        <div class="slide">
+          <img src="https://picsum.photos/id/1015/1200/400" />
+          <div class="contenido">
+            <h2>Remodelamos tu espacio</h2>
+            <p>Transformamos ideas en realidad.</p>
+            <button onclick="contactar()">Solicitar asesoría</button>
+          </div>
+        </div>
+
+        <div class="slide">
+          <img src="https://picsum.photos/id/1019/1200/400" />
+          <div class="contenido">
+            <h2>Calidad garantizada</h2>
+            <p>Más de 10 años de experiencia.</p>
+            <button onclick="contactar()">Ver proyectos</button>
+          </div>
+        </div>
+      </div>
+
+      <button class="btn prev" onclick="mover(-1)">❮</button>
+      <button class="btn next" onclick="mover(1)">❯</button>
+    </div>
+<!--Formulario de cotización-->
+    <section class="formulario-cotizacion">
+      <div class="form-container">
+        <h2>Contáctanos</h2>
+
+        <form id="formConstructora">
+          <label>Nombre</label>
+          <input type="text" id="nombre" required />
+
+          <label>Correo</label>
+          <input type="email" id="correo" required />
+          <!--Campo de tipo de servicio-->
+          <label>Tipo de servicio</label>
+          <select id="servicio" required>
+            <option value="">Seleccione</option>
+            <option value="construccion">Construcción</option>
+            <option value="remodelacion">Remodelación</option>
+            <option value="cotizacion">Cotización</option>
+          </select>
+
+          <!-- Campo tipo de proyecto -->
+          <div id="tipoProyectoDiv" class="hidden">
+            <label>Tipo de proyecto</label>
+            <select id="tipoProyecto">
+              <option value="">Seleccione</option>
+              <option value="casa">Casa</option>
+              <option value="edificio">Edificio</option>
+              <option value="oficina">Oficina</option>
+            </select>
+          </div>
+
+          <!-- Campo área aproximada< -->
+          <div id="areaDiv" class="hidden">
+            <label>Área aproximada (m²)</label>
+            <input type="number" id="area" />
+          </div>
+
+          <label>Mensaje</label>
+          <textarea id="mensaje" rows="4"></textarea>
+
+          <button type="submit">Enviar</button>
+        </form>
+
+        <p id="respuesta"></p>
+      </div>
+    </section>
+
+    <script src="js.js"></script>
+  </body>
+</html>
